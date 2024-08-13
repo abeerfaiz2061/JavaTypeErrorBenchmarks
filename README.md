@@ -1,2 +1,1 @@
-# JavaTypeErrorBenchmarks
-Collecting Benchmarks for Type Incorrect Java Programs
+# Collecting Benchmarks for Type Incorrect Java Programs
