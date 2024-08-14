@@ -58,3 +58,14 @@ Contributions to this research are highly encouraged. If you're interested in bu
    * If you wish to explore how other Java compilers handle type errors, feel free to add support for new compilers and share your results.
  * Enhance the Scripts:
    * Improvements to the batch scripts that increase their efficiency, usability, or functionality are always welcome.
+
+## **Acknowledgments**
+I would like to acknowledge and give credit to the original authors of the code that contributed to the foundation of this project. Their work has significantly contributed to the development of this project:
+
+* kousen/generics
+* amigoscode/java-generics
+* vivin/GenericTree
+* RameshMF/java-generics-guide
+* c05mic/GenericN-aryTree
+* custersnele/JavaAdv_H5_Generics
+* hellojavaio/Java-Generics-and-Collections-2
