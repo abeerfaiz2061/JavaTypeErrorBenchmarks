@@ -32,16 +32,29 @@ The repository is organized as follows:
 To run this project on your machine, follow these steps:
 
 * Ensure Java is Installed:
-  
-  Make sure you have Java installed on your local machine. The scripts were tested using Java 8, but they should work with other versions as well. Note the following:
-
+  Make sure you have Java installed on your local machine. The scripts were tested using Java 8, but they should work with other versions as well.
+  Note the following:
   * Generics were introduced in Java 5, so the minimum Java version required to run these programs is Java 5.
   * ExtendJ supports Java versions up to 11.
   * You can use higher Java versions for javac and ecj.
 * Download Required JAR Files:
-
   * ECJ JAR: Download the Eclipse ECJ compiler JAR file.
   * ExtendJ JAR: Download the ExtendJ JAR file.
 * Update Script Paths:
-  
-  Before running the batch scripts, update the paths to the ecj and ExtendJ JAR files in the script. 
+  Before running the batch scripts, update the paths to the ecj and ExtendJ JAR files in the script.
+
+## **Licensing**
+This repository is unlicensed, meaning there is no formal license attached to the project. However, you are welcome to use, modify, and distribute the code for any purpose, including both academic and commercial applications. While a formal license isn't provided, please consider acknowledging this repository if it significantly contributes to your work.
+
+## **Reusing Code**
+Feel free to reuse, modify, or extend the code in this repository for any purpose. You have full freedom to integrate it into your projects, research, or any other applications. If you find this code helpful, consider giving credit to this repository.
+
+## **Contribution**
+Contributions to this research are highly encouraged. If you're interested in building upon this work, here are some ways you can contribute:
+
+ * Introduce New Benchmarks:
+   * Contribute by adding new Java programs that explore additional Java language specification features beyond those currently included, such as Lambdas, Streams, etc.
+ * Expand Compiler Support:
+   * If you wish to explore how other Java compilers handle type errors, feel free to add support for new compilers and share your results.
+ * Enhance the Scripts:
+   * Improvements to the batch scripts that increase their efficiency, usability, or functionality are always welcome.
