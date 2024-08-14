@@ -1,0 +1,27 @@
+javac errors for Code5.java 
+Code5.java:17: error: method bar in class Code5 cannot be applied to given types;
+        List<Integer> i = bar(m, l);
+                          ^
+  required: Map<T,T>,List<? extends T>
+  found: Map<Boolean,String>,List<CAP#1>
+  reason: inference variable T has incompatible bounds
+    equality constraints: String,Boolean
+    upper bounds: Number
+  where T is a type-variable:
+    T extends Number declared in method <T>bar(Map<T,T>,List<? extends T>)
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends Object super: Number from capture of ? super Number
+1 error
+ 
+========================= 
+ExtendJ errors for Code5.java 
+ 
+========================= 
+Eclipse ECJ errors for Code5.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_Extend_WildCard\Code5.java (at line 17)
+	List<Integer> i = bar(m, l);
+	                  ^^^
+The method bar(Map<T,T>, List<? extends T>) in the type Code5 is not applicable for the arguments (Map<Boolean,String>, List<capture#1-of ? super Number>)
+----------
+1 problem (1 error)

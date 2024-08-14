@@ -1,0 +1,22 @@
+javac errors for Code6.java 
+Code6.java:177: error: incompatible types: GenericTreeNode<E> cannot be converted to GenericTreeNode<T>
+        parent.addChild(child);
+                        ^
+  where E,T are type-variables:
+    E extends T declared in method <E>addChildToNode(GenericTreeNode<T>,GenericTreeNode<E>)
+    T extends Object declared in class Code6
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+ 
+============================================================================= 
+ExtendJ errors for Code6.java 
+ 
+============================================================================= 
+Eclipse ECJ errors for Code6.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code6.java (at line 177)
+	parent.addChild(child);
+	       ^^^^^^^^
+The method addChild(GenericTreeNode<T>) in the type GenericTreeNode<T> is not applicable for the arguments (GenericTreeNode<E>)
+----------
+1 problem (1 error)

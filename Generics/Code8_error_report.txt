@@ -1,0 +1,47 @@
+javac errors for Code8.java 
+Code8.java:13: error: no suitable method found for addAll(List<T>)
+        items.addAll(elements);
+             ^
+    method Collection.addAll(Collection<? extends E>) is not applicable
+      (argument mismatch; List<T> cannot be converted to Collection<? extends E>)
+    method List.addAll(Collection<? extends E>) is not applicable
+      (argument mismatch; List<T> cannot be converted to Collection<? extends E>)
+  where T,E are type-variables:
+    T extends Object declared in class Code8
+    E extends Object declared in method <E>addItemsToList(List<E>,List<T>)
+Code8.java:28: error: method addItemsToList in class Code8<T> cannot be applied to given types;
+        List<String> resultList = tree.addItemsToList(stringList, integerList);
+                                      ^
+  required: List<E>,List<String>
+  found: List<String>,List<Integer>
+  reason: cannot infer type-variable(s) E
+    (argument mismatch; List<Integer> cannot be converted to List<String>)
+  where E,T are type-variables:
+    E extends Object declared in method <E>addItemsToList(List<E>,List<T>)
+    T extends Object declared in class Code8
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+ 
+============================================================================= 
+ExtendJ errors for Code8.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code8.java:28: error: no method named addItemsToList(java.util.List<java.lang.String>, java.util.List<java.lang.Integer>) in Code8<java.lang.String> matches. However, there is a method addItemsToList(java.util.List<E>, java.util.List<java.lang.String>)
+ 
+============================================================================= 
+Eclipse ECJ errors for Code8.java 
+----------
+1. WARNING in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code8.java (at line 6)
+	private T root;
+	          ^^^^
+The value of the field Code8<T>.root is not used
+----------
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code8.java (at line 13)
+	items.addAll(elements);
+	      ^^^^^^
+The method addAll(Collection<? extends E>) in the type List<E> is not applicable for the arguments (List<T>)
+----------
+3. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code8.java (at line 28)
+	List<String> resultList = tree.addItemsToList(stringList, integerList);
+	                               ^^^^^^^^^^^^^^
+The method addItemsToList(List<E>, List<String>) in the type Code8<String> is not applicable for the arguments (List<String>, List<Integer>)
+----------
+3 problems (2 errors, 1 warning)

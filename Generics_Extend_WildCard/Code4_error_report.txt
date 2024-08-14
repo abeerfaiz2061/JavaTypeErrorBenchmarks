@@ -1,0 +1,25 @@
+javac errors for Code4.java 
+Code4.java:16: error: no suitable method found for add(String)
+        wildcardObjects.add("New String");
+                       ^
+    method Collection.add(CAP#1) is not applicable
+      (argument mismatch; String cannot be converted to CAP#1)
+    method List.add(CAP#1) is not applicable
+      (argument mismatch; String cannot be converted to CAP#1)
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends Object from capture of ? extends Object
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+ 
+========================= 
+ExtendJ errors for Code4.java 
+ 
+========================= 
+Eclipse ECJ errors for Code4.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_WildCard\Code4.java (at line 16)
+	wildcardObjects.add("New String");
+	                ^^^
+The method add(capture#1-of ? extends Object) in the type List<capture#1-of ? extends Object> is not applicable for the arguments (String)
+----------
+1 problem (1 error)

@@ -1,0 +1,34 @@
+javac errors for Code3.java 
+Code3.java:34: error: method setAndProcess in class Code3<T> cannot be applied to given types;
+        box.setAndProcess("Test"); 
+           ^
+  required: U
+  found: String
+  reason: inferred type does not conform to upper bound(s)
+    inferred: String
+    upper bound(s): Number
+  where U,T are type-variables:
+    U extends Number declared in method <U>setAndProcess(U)
+    T extends Object declared in class Code3
+Note: Code3.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+ 
+============================================================================= 
+ExtendJ errors for Code3.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code3.java:34: error: no method named setAndProcess(java.lang.String) in Code3<java.lang.Number> matches. However, there is a method setAndProcess(Code3<java.lang.Number>.setAndProcess(java.lang.Number)@U)
+ 
+============================================================================= 
+Eclipse ECJ errors for Code3.java 
+----------
+1. WARNING in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code3.java (at line 17)
+	set((T) u); 
+	    ^^^^^
+Type safety: Unchecked cast from U to T
+----------
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code3.java (at line 34)
+	box.setAndProcess("Test"); 
+	    ^^^^^^^^^^^^^
+The method setAndProcess(U) in the type Code3<Number> is not applicable for the arguments (String)
+----------
+2 problems (1 error, 1 warning)

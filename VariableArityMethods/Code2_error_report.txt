@@ -1,0 +1,22 @@
+javac errors for Code2.java 
+Code2.java:11: error: no suitable method found for display(int,int,long)
+        display(1, 2, 3L);
+        ^
+    method Code2.display(Integer...) is not applicable
+      (varargs mismatch; long cannot be converted to Integer)
+    method Code2.display(int...) is not applicable
+      (varargs mismatch; possible lossy conversion from long to int)
+1 error
+ 
+========================= 
+ExtendJ errors for Code2.java 
+ 
+========================= 
+Eclipse ECJ errors for Code2.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\VariableArityMethods\Code2.java (at line 11)
+	display(1, 2, 3L);
+	^^^^^^^
+The method display(Integer...) in the type Code2 is not applicable for the arguments (int, int, long)
+----------
+1 problem (1 error)

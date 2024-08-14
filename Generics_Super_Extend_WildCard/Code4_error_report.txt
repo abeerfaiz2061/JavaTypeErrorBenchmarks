@@ -1,0 +1,26 @@
+javac errors for Code4.java 
+Code4.java:18: error: method baz in class Code4 cannot be applied to given types;
+        List<Integer> ret = baz(mt,ms);
+                            ^
+  required: Map<T,? super T>,S
+  found: Map<Object,Number>,Map<Number,String>
+  reason: inference variable T has incompatible bounds
+    equality constraints: Object
+    upper bounds: Number,Object
+  where T,S are type-variables:
+    T extends Object declared in method <T,S>baz(Map<T,? super T>,S)
+    S extends Map<Number,T> declared in method <T,S>baz(Map<T,? super T>,S)
+1 error
+ 
+========================= 
+ExtendJ errors for Code4.java 
+ 
+========================= 
+Eclipse ECJ errors for Code4.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_Extend_WildCard\Code4.java (at line 18)
+	List<Integer> ret = baz(mt,ms);
+	                    ^^^
+The method baz(Map<T,? super T>, S) in the type Code4 is not applicable for the arguments (Map<Object,Number>, Map<Number,String>)
+----------
+1 problem (1 error)

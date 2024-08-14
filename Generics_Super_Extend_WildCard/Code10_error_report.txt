@@ -1,0 +1,18 @@
+javac errors for Code10.java 
+Code10.java:9: error: incompatible types: List<Number> cannot be converted to List<? extends Integer>
+        List<? extends Integer> source = nums;
+                                         ^
+1 error
+ 
+========================= 
+ExtendJ errors for Code10.java 
+ 
+========================= 
+Eclipse ECJ errors for Code10.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_Extend_WildCard\Code10.java (at line 9)
+	List<? extends Integer> source = nums;
+	                                 ^^^^
+Type mismatch: cannot convert from List<Number> to List<? extends Integer>
+----------
+1 problem (1 error)

@@ -1,0 +1,18 @@
+javac errors for Code2.java 
+Code2.java:17: error: incompatible types: Code2<InputStream> cannot be converted to Code2<? extends Serializable>
+        Code2<? extends Serializable> ce=new Code2<InputStream>();
+                                         ^
+1 error
+ 
+========================= 
+ExtendJ errors for Code2.java 
+ 
+========================= 
+Eclipse ECJ errors for Code2.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_WildCard_CaptureConversion\Code2.java (at line 17)
+	Code2<? extends Serializable> ce=new Code2<InputStream>();
+	                                 ^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from Code2<InputStream> to Code2<? extends Serializable>
+----------
+1 problem (1 error)

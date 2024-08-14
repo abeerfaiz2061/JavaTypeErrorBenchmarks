@@ -1,0 +1,46 @@
+javac errors for Code5.java 
+Code5.java:181: error: getRoot() in StringTree cannot override getRoot() in Code5
+    public GenericTreeNode<String> getRoot() {
+                                   ^
+  return type GenericTreeNode<String> is not compatible with GenericTreeNode<Integer>
+  where T is a type-variable:
+    T extends Object declared in class Code5
+Code5.java:180: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+Code5.java:186: error: name clash: setRoot(GenericTreeNode<String>) in StringTree and setRoot(GenericTreeNode<T>) in Code5 have the same erasure, yet neither overrides the other
+    public void setRoot(GenericTreeNode<String> root) {
+                ^
+  where T is a type-variable:
+    T extends Object declared in class Code5
+Code5.java:187: error: incompatible types: GenericTreeNode<String> cannot be converted to GenericTreeNode<Integer>
+        super.setRoot(root);  // Causes a compile-time error due to type mismatch
+                      ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+4 errors
+ 
+============================================================================= 
+ExtendJ errors for Code5.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code5.java:181: error: the return type of method getRoot() in StringTree does not match the return type of method getRoot() in Code5<java.lang.Integer> and may thus not be overridden
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code5.java:181: error: the return type of method getRoot() in StringTree does not match the return type of method getRoot() in Code5<java.lang.Integer> and may thus not be overridden
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code5.java:187: error: no method named setRoot(GenericTreeNode<java.lang.String>) in Code5<java.lang.Integer> matches. However, there is a method setRoot(GenericTreeNode<java.lang.Integer>)
+ 
+============================================================================= 
+Eclipse ECJ errors for Code5.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code5.java (at line 181)
+	public GenericTreeNode<String> getRoot() {
+	       ^^^^^^^^^^^^^^^^^^^^^^^
+The return type is incompatible with Code5<Integer>.getRoot()
+----------
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code5.java (at line 186)
+	public void setRoot(GenericTreeNode<String> root) {
+	            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Name clash: The method setRoot(GenericTreeNode<String>) of type StringTree has the same erasure as setRoot(GenericTreeNode<T>) of type Code5<T> but does not override it
+----------
+3. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code5.java (at line 187)
+	super.setRoot(root);  // Causes a compile-time error due to type mismatch
+	      ^^^^^^^
+The method setRoot(GenericTreeNode<Integer>) in the type Code5<Integer> is not applicable for the arguments (GenericTreeNode<String>)
+----------
+3 problems (3 errors)

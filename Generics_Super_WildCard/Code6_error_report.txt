@@ -1,0 +1,19 @@
+javac errors for Code6.java 
+Code6.java:26: error: incompatible types: List<Long> cannot be converted to List<? super Integer>
+        processElements(a2); 
+                        ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+ 
+========================= 
+ExtendJ errors for Code6.java 
+ 
+========================= 
+Eclipse ECJ errors for Code6.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_WildCard\Code6.java (at line 26)
+	processElements(a2); 
+	^^^^^^^^^^^^^^^
+The method processElements(List<? super Integer>) in the type Code6 is not applicable for the arguments (List<Long>)
+----------
+1 problem (1 error)

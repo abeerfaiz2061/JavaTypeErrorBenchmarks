@@ -1,0 +1,23 @@
+javac errors for Code10.java 
+Code10.java:88: error: incompatible types: Code10<CAP#1> cannot be converted to Code10<T>
+            node.addChild(child);
+                          ^
+  where T is a type-variable:
+    T extends Object declared in method <T>addChildWithInvalidType(Code10<T>,List<Code10<? extends T>>)
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends T from capture of ? extends T
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+ 
+========================= 
+ExtendJ errors for Code10.java 
+ 
+========================= 
+Eclipse ECJ errors for Code10.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_WildCard\Code10.java (at line 88)
+	node.addChild(child);
+	     ^^^^^^^^
+The method addChild(Code10<T>) in the type Code10<T> is not applicable for the arguments (Code10<capture#3-of ? extends T>)
+----------
+1 problem (1 error)

@@ -1,0 +1,125 @@
+javac errors for Code2.java 
+Code2.java:20: error: method comparingByKey in interface Entry<K,V> cannot be applied to given types;
+                .sorted(Map.Entry.<T, T>comparingByKey())
+                                 ^
+  required: no arguments
+  found: no arguments
+  reason: explicit type argument T does not conform to declared bound(s) Comparable<? super T>
+  where K,V,T are type-variables:
+    K extends Object declared in interface Entry
+    V extends Object declared in interface Entry
+    T extends Object declared in class Code2
+Code2.java:21: error: incompatible types: cannot infer type-variable(s) T,K#1,U,M,K#2,V#1
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
+                                         ^
+    (argument mismatch; invalid method reference
+      method getKey in interface Entry<K#3,V#2> cannot be applied to given types
+        required: no arguments
+        found: Object
+        reason: actual and formal argument lists differ in length)
+  where T,K#1,U,M,K#2,V#1,K#3,V#2 are type-variables:
+    T extends Object declared in method <T,K#1,U,M>toMap(Function<? super T,? extends K#1>,Function<? super T,? extends U>,BinaryOperator<U>,Supplier<M>)
+    K#1 extends Object declared in method <T,K#1,U,M>toMap(Function<? super T,? extends K#1>,Function<? super T,? extends U>,BinaryOperator<U>,Supplier<M>)
+    U extends Object declared in method <T,K#1,U,M>toMap(Function<? super T,? extends K#1>,Function<? super T,? extends U>,BinaryOperator<U>,Supplier<M>)
+    M extends Map<K#1,U> declared in method <T,K#1,U,M>toMap(Function<? super T,? extends K#1>,Function<? super T,? extends U>,BinaryOperator<U>,Supplier<M>)
+    K#2 extends Object declared in class LinkedHashMap
+    V#1 extends Object declared in class LinkedHashMap
+    K#3 extends Object declared in interface Entry
+    V#2 extends Object declared in interface Entry
+Code2.java:21: error: invalid method reference
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
+                                                                ^
+  non-static method getValue() cannot be referenced from a static context
+  where V is a type-variable:
+    V extends Object declared in interface Entry
+Code2.java:21: error: invalid method reference
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
+                                             ^
+  non-static method getKey() cannot be referenced from a static context
+  where K is a type-variable:
+    K extends Object declared in interface Entry
+Code2.java:29: error: incompatible types: inference variable V has incompatible bounds
+                .sorted(Map.Entry.comparingByValue())
+                                                  ^
+    equality constraints: T
+    upper bounds: Comparable<? super V>
+  where V,K,T are type-variables:
+    V extends Comparable<? super V> declared in method <K,V>comparingByValue()
+    K extends Object declared in method <K,V>comparingByValue()
+    T extends Object declared in class Code2
+Code2.java:30: error: incompatible types: cannot infer type-variable(s) T,K#1,U,M,K#2,V#1
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
+                                         ^
+    (argument mismatch; invalid method reference
+      method getKey in interface Entry<K#3,V#2> cannot be applied to given types
+        required: no arguments
+        found: Object
+        reason: actual and formal argument lists differ in length)
+  where T,K#1,U,M,K#2,V#1,K#3,V#2 are type-variables:
+    T extends Object declared in method <T,K#1,U,M>toMap(Function<? super T,? extends K#1>,Function<? super T,? extends U>,BinaryOperator<U>,Supplier<M>)
+    K#1 extends Object declared in method <T,K#1,U,M>toMap(Function<? super T,? extends K#1>,Function<? super T,? extends U>,BinaryOperator<U>,Supplier<M>)
+    U extends Object declared in method <T,K#1,U,M>toMap(Function<? super T,? extends K#1>,Function<? super T,? extends U>,BinaryOperator<U>,Supplier<M>)
+    M extends Map<K#1,U> declared in method <T,K#1,U,M>toMap(Function<? super T,? extends K#1>,Function<? super T,? extends U>,BinaryOperator<U>,Supplier<M>)
+    K#2 extends Object declared in class LinkedHashMap
+    V#1 extends Object declared in class LinkedHashMap
+    K#3 extends Object declared in interface Entry
+    V#2 extends Object declared in interface Entry
+Code2.java:30: error: invalid method reference
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
+                                                                ^
+  non-static method getValue() cannot be referenced from a static context
+  where V is a type-variable:
+    V extends Object declared in interface Entry
+Code2.java:30: error: invalid method reference
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
+                                             ^
+  non-static method getKey() cannot be referenced from a static context
+  where K is a type-variable:
+    K extends Object declared in interface Entry
+Code2.java:41: error: incompatible types: Map<Integer,String> cannot be converted to Map<Integer,Integer>
+        sortingMaps.setMap(testMap);
+                           ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+9 errors
+ 
+============================================================================= 
+ExtendJ errors for Code2.java 
+Fatal exception:
+java.lang.NullPointerException
+	at org.extendj.ast.LambdaExpr.toClass(LambdaExpr.java:351)
+	at org.extendj.ast.LambdaExpr.anonymousDecl(LambdaExpr.java:367)
+	at org.extendj.ast.LambdaExpr.Define_enclosingLambdaType(LambdaExpr.java:1472)
+	at org.extendj.ast.ASTNode.Define_enclosingLambdaType(ASTNode.java:4093)
+	at org.extendj.ast.InferredParameterDeclaration.enclosingLambdaType(InferredParameterDeclaration.java:859)
+	at org.extendj.ast.InferredParameterDeclaration.hostType(InferredParameterDeclaration.java:656)
+	at org.extendj.ast.VarAccess.nameProblems(VarAccess.java:812)
+	at org.extendj.ast.VarAccess.contributeTo_CompilationUnit_problems(VarAccess.java:1293)
+	at org.extendj.ast.CompilationUnit.problems_compute(CompilationUnit.java:1547)
+	at org.extendj.ast.CompilationUnit.problems(CompilationUnit.java:1526)
+	at org.extendj.ast.CompilationUnit.errors(CompilationUnit.java:709)
+	at org.extendj.ast.Frontend.processCompilationUnit(Frontend.java:246)
+	at org.extendj.JavaCompiler.processCompilationUnit(JavaCompiler.java:107)
+	at org.extendj.ast.Frontend.run(Frontend.java:169)
+	at org.extendj.JavaCompiler.run(JavaCompiler.java:101)
+	at org.extendj.JavaCompiler.main(JavaCompiler.java:61)
+	at org.jastadd.extendj.JavaCompiler.main(JavaCompiler.java:39)
+ 
+============================================================================= 
+Eclipse ECJ errors for Code2.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code2.java (at line 20)
+	.sorted(Map.Entry.<T, T>comparingByKey())
+	                        ^^^^^^^^^^^^^^
+Bound mismatch: The generic method comparingByKey() of type Map<K,V>.Entry<K,V> is not applicable for the arguments (). The inferred type T is not a valid substitute for the bounded parameter <K extends Comparable<? super K>>
+----------
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code2.java (at line 29)
+	.sorted(Map.Entry.comparingByValue())
+	 ^^^^^^
+The method sorted(Comparator<? super Map.Entry<T,T>>) in the type Stream<Map.Entry<T,T>> is not applicable for the arguments (Comparator<Map.Entry<Object,Comparable<? super Comparable<? super V>>>>)
+----------
+3. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code2.java (at line 41)
+	sortingMaps.setMap(testMap);
+	            ^^^^^^
+The method setMap(Map<Integer,Integer>) in the type Code2<Integer> is not applicable for the arguments (Map<Integer,String>)
+----------
+3 problems (3 errors)

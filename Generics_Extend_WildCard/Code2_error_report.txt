@@ -1,0 +1,45 @@
+javac errors for Code2.java 
+Code2.java:25: error: no suitable method found for add(Box<Integer>)
+        boxes.add(new Box<>(3)); // Compile-time error: Cannot add to list with bounded wildcard
+             ^
+    method Collection.add(CAP#1) is not applicable
+      (argument mismatch; cannot infer type arguments for Box<>
+          reason: no instance(s) of type variable(s) T exist so that Box<T> conforms to CAP#1)
+    method List.add(CAP#1) is not applicable
+      (argument mismatch; cannot infer type arguments for Box<>
+          reason: no instance(s) of type variable(s) T exist so that Box<T> conforms to CAP#1)
+  where T is a type-variable:
+    T extends Number declared in class Box
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends Box<? extends Number> from capture of ? extends Box<? extends Number>
+Code2.java:32: error: cannot infer type arguments for Box<>
+        boxes.add(new Box<>("string")); // Compile-time error: String is not a Number
+                  ^
+  reason: inferred type does not conform to upper bound(s)
+    inferred: String
+    upper bound(s): Number
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+ 
+========================= 
+ExtendJ errors for Code2.java 
+ 
+========================= 
+Eclipse ECJ errors for Code2.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_WildCard\Code2.java (at line 25)
+	boxes.add(new Box<>(3)); // Compile-time error: Cannot add to list with bounded wildcard
+	      ^^^
+The method add(capture#4-of ? extends Box<? extends Number>) in the type List<capture#4-of ? extends Box<? extends Number>> is not applicable for the arguments (new Box<>(3))
+----------
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_WildCard\Code2.java (at line 25)
+	boxes.add(new Box<>(3)); // Compile-time error: Cannot add to list with bounded wildcard
+	          ^^^^^^^^^^^^
+Cannot infer type arguments for Box<>
+----------
+3. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_WildCard\Code2.java (at line 32)
+	boxes.add(new Box<>("string")); // Compile-time error: String is not a Number
+	          ^^^^^^^^^^^^^^^^^^^
+Cannot infer type arguments for Box<>
+----------
+3 problems (3 errors)

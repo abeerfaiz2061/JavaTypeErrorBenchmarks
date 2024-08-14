@@ -1,0 +1,20 @@
+javac errors for Code1.java 
+Code1.java:4: error: unexpected type
+  class Integer implements Comparable<?> {
+                                     ^
+  required: class or interface without bounds
+  found:    ?
+1 error
+ 
+========================= 
+ExtendJ errors for Code1.java 
+ 
+========================= 
+Eclipse ECJ errors for Code1.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Interface_WildCard\Code1.java (at line 4)
+	class Integer implements Comparable<?> {
+	                         ^^^^^^^^^^
+The type Integer cannot extend or implement Comparable<?>. A supertype may not specify any wildcard
+----------
+1 problem (1 error)

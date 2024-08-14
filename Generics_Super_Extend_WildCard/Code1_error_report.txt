@@ -1,0 +1,25 @@
+javac errors for Code1.java 
+Code1.java:13: error: method foo in class Code1 cannot be applied to given types;
+        foo(ma, mb);
+        ^
+  required: Map<? super T,? super T>,Map<? extends T,? extends T>
+  found: Map<Number,Integer>,Map<Number,String>
+  reason: inferred type does not conform to upper bound(s)
+    inferred: Serializable
+    upper bound(s): Integer,Number,Object
+  where T is a type-variable:
+    T extends Object declared in method <T>foo(Map<? super T,? super T>,Map<? extends T,? extends T>)
+1 error
+ 
+========================= 
+ExtendJ errors for Code1.java 
+ 
+========================= 
+Eclipse ECJ errors for Code1.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_Extend_WildCard\Code1.java (at line 13)
+	foo(ma, mb);
+	^^^
+The method foo(Map<? super T,? super T>, Map<? extends T,? extends T>) in the type Code1 is not applicable for the arguments (Map<Number,Integer>, Map<Number,String>)
+----------
+1 problem (1 error)

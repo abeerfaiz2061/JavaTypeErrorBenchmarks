@@ -1,0 +1,25 @@
+javac errors for Code6.java 
+Code6.java:14: error: method countGreaterThan in class Code6 cannot be applied to given types;
+                countGreaterThan(numbers, 1.0)
+                ^
+  required: T[],T
+  found: Integer[],double
+  reason: inference variable T has incompatible bounds
+    equality constraints: Integer,Double
+    lower bounds: Double,Integer
+  where T is a type-variable:
+    T extends Comparable<T> declared in method <T>countGreaterThan(T[],T)
+1 error
+ 
+========================= 
+ExtendJ errors for Code6.java 
+ 
+========================= 
+Eclipse ECJ errors for Code6.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_WildCard\Code6.java (at line 14)
+	countGreaterThan(numbers, 1.0)
+	^^^^^^^^^^^^^^^^
+The method countGreaterThan(T[], T) in the type Code6 is not applicable for the arguments (Integer[], double)
+----------
+1 problem (1 error)

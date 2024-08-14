@@ -1,0 +1,36 @@
+javac errors for Code2.java 
+Code2.java:12: error: method foo in class Code2 cannot be applied to given types;
+        foo(m1);
+        ^
+  required: Map<? super T,? super T>
+  found: Map<String,Number>
+  reason: inference variable T has incompatible upper bounds String,Number
+  where T is a type-variable:
+    T extends Number declared in method <T>foo(Map<? super T,? super T>)
+Code2.java:14: error: method foo in class Code2 cannot be applied to given types;
+        foo(m2);
+        ^
+  required: Map<? super T,? super T>
+  found: Map<Number,String>
+  reason: inference variable T has incompatible upper bounds String,Number
+  where T is a type-variable:
+    T extends Number declared in method <T>foo(Map<? super T,? super T>)
+2 errors
+ 
+========================= 
+ExtendJ errors for Code2.java 
+ 
+========================= 
+Eclipse ECJ errors for Code2.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_Extend_WildCard\Code2.java (at line 12)
+	foo(m1);
+	^^^
+The method foo(Map<? super T,? super T>) in the type Code2 is not applicable for the arguments (Map<String,Number>)
+----------
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_Extend_WildCard\Code2.java (at line 14)
+	foo(m2);
+	^^^
+The method foo(Map<? super T,? super T>) in the type Code2 is not applicable for the arguments (Map<Number,String>)
+----------
+2 problems (2 errors)

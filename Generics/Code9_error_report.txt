@@ -1,0 +1,32 @@
+javac errors for Code9.java 
+Code9.java:24: error: incompatible types: int cannot be converted to T
+        this.first = (T) ((Integer) this.first + (Integer) element);
+                         ^
+  where T is a type-variable:
+    T extends Object declared in class Code9
+Code9.java:25: error: incompatible types: int cannot be converted to T
+        this.second = (T) ((Integer) this.second + (Integer) element);
+                          ^
+  where T is a type-variable:
+    T extends Object declared in class Code9
+2 errors
+ 
+============================================================================= 
+ExtendJ errors for Code9.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code9.java:24: error: int cannot be cast into T
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code9.java:25: error: int cannot be cast into T
+ 
+============================================================================= 
+Eclipse ECJ errors for Code9.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code9.java (at line 24)
+	this.first = (T) ((Integer) this.first + (Integer) element);
+	             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from int to T
+----------
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code9.java (at line 25)
+	this.second = (T) ((Integer) this.second + (Integer) element);
+	              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot cast from int to T
+----------
+2 problems (2 errors)

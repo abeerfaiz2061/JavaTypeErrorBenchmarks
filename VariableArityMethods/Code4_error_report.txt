@@ -1,0 +1,23 @@
+javac errors for Code4.java 
+Code4.java:17: error: method addNumbers in class Code4<T> cannot be applied to given types;
+        example.addNumbers(numberList, 1, 2, "Three");
+               ^
+  required: List<? super Integer>,Integer[]
+  found: List<Number>,int,int,String
+  reason: varargs mismatch; String cannot be converted to Integer
+  where T is a type-variable:
+    T extends Number declared in class Code4
+1 error
+ 
+========================= 
+ExtendJ errors for Code4.java 
+ 
+========================= 
+Eclipse ECJ errors for Code4.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\VariableArityMethods\Code4.java (at line 17)
+	example.addNumbers(numberList, 1, 2, "Three");
+	        ^^^^^^^^^^
+The method addNumbers(List<? super Integer>, Integer...) in the type Code4<Integer> is not applicable for the arguments (List<Number>, int, int, String)
+----------
+1 problem (1 error)

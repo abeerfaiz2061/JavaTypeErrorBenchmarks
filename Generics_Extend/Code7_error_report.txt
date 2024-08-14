@@ -1,0 +1,26 @@
+javac errors for Code7.java 
+Code7.java:13: error: illegal generic type for instanceof
+        if (obj instanceof T) {
+                           ^
+Note: Code7.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+ 
+============================================================================= 
+ExtendJ errors for Code7.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code7.java:13: error: the right-hand side of this instanceof expression does not denote a reifiable type
+ 
+============================================================================= 
+Eclipse ECJ errors for Code7.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code7.java (at line 13)
+	if (obj instanceof T) {
+	    ^^^^^^^^^^^^^^^^
+Cannot perform instanceof check against type parameter T. Use its erasure A instead since further generic type information will be erased at runtime
+----------
+2. WARNING in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code7.java (at line 14)
+	T casted = (T) obj; 
+	           ^^^^^^^
+Type safety: Unchecked cast from U to T
+----------
+2 problems (1 error, 1 warning)

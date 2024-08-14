@@ -1,0 +1,23 @@
+javac errors for Code1.java 
+Code1.java:7: error: incompatible types: Object cannot be converted to CAP#1
+            dst.set(i, src.get(i));
+                              ^
+  where T is a type-variable:
+    T extends Object declared in method <T>copy(List<? extends T>,List<? super T>)
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends T from capture of ? extends T
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+ 
+========================= 
+ExtendJ errors for Code1.java 
+ 
+========================= 
+Eclipse ECJ errors for Code1.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_Extend\Code1.java (at line 7)
+	dst.set(i, src.get(i));
+	    ^^^
+The method set(int, capture#2-of ? extends T) in the type List<capture#2-of ? extends T> is not applicable for the arguments (int, capture#3-of ? super T)
+----------
+1 problem (1 error)

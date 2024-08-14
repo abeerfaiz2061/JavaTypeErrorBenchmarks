@@ -1,0 +1,50 @@
+javac errors for Code12.java 
+Code12.java:6: error: non-static type variable T cannot be referenced from a static context
+    private static List<T> values = new ArrayList<T>(); 
+                        ^
+Code12.java:16: error: non-static type variable T cannot be referenced from a static context
+    public static List<T> getValues() { 
+                       ^
+Code12.java:6: error: non-static type variable T cannot be referenced from a static context
+    private static List<T> values = new ArrayList<T>(); 
+                                                  ^
+3 errors
+ 
+============================================================================= 
+ExtendJ errors for Code12.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code12.java:6: error: type argument 1 is of type Unknown which is not within the bounds of type parameter E (E extends java.lang.Object)
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code12.java:6,25: error: no visible type named T
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code12.java:6: error: type argument 1 is of type Unknown which is not within the bounds of type parameter E (E extends java.lang.Object)
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code12.java:6,51: error: no visible type named T
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code12.java:16: error: type argument 1 is of type Unknown which is not within the bounds of type parameter E (E extends java.lang.Object)
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code12.java:16,24: error: no visible type named T
+ 
+============================================================================= 
+Eclipse ECJ errors for Code12.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code12.java (at line 6)
+	private static List<T> values = new ArrayList<T>(); 
+	                    ^
+Cannot make a static reference to the non-static type T
+----------
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code12.java (at line 6)
+	private static List<T> values = new ArrayList<T>(); 
+	                                              ^
+Cannot make a static reference to the non-static type T
+----------
+3. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code12.java (at line 10)
+	values.add(value); 
+	^^^^^^
+values cannot be resolved
+----------
+4. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code12.java (at line 16)
+	public static List<T> getValues() { 
+	                   ^
+Cannot make a static reference to the non-static type T
+----------
+5. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code12.java (at line 17)
+	return values; 
+	       ^^^^^^
+values cannot be resolved to a variable
+----------
+5 problems (5 errors)

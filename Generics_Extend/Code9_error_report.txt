@@ -1,0 +1,23 @@
+javac errors for Code9.java 
+Code9.java:36: error: incompatible types: inference variable T has incompatible bounds
+        List<Integer> integerList = fromArrayToListWithUpperBound(doubleArr);
+                                                                 ^
+    equality constraints: Integer
+    lower bounds: Double
+  where T is a type-variable:
+    T extends Number declared in method <T>fromArrayToListWithUpperBound(T[])
+1 error
+ 
+============================================================================= 
+ExtendJ errors for Code9.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code9.java:36: error: cannot assign variable integerList of type java.util.List<java.lang.Integer> a value of type java.util.List<java.lang.Double>
+ 
+============================================================================= 
+Eclipse ECJ errors for Code9.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code9.java (at line 36)
+	List<Integer> integerList = fromArrayToListWithUpperBound(doubleArr);
+	                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from List<Double> to List<Integer>
+----------
+1 problem (1 error)

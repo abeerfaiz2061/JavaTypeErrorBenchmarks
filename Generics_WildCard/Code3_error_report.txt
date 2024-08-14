@@ -1,0 +1,49 @@
+javac errors for Code3.java 
+Code3.java:42: error: no suitable method found for add(Movie)
+        objecten.add(new Movie("Inception", Rating.MATURE));
+                ^
+    method Collection.add(Double) is not applicable
+      (argument mismatch; Movie cannot be converted to Double)
+    method List.add(Double) is not applicable
+      (argument mismatch; Movie cannot be converted to Double)
+    method AbstractCollection.add(Double) is not applicable
+      (argument mismatch; Movie cannot be converted to Double)
+    method AbstractList.add(Double) is not applicable
+      (argument mismatch; Movie cannot be converted to Double)
+    method ArrayList.add(Double) is not applicable
+      (argument mismatch; Movie cannot be converted to Double)
+Code3.java:55: error: no suitable method found for add(Movie)
+        items.add(new Movie("Inception", Rating.MATURE));
+             ^
+    method Collection.add(CAP#1) is not applicable
+      (argument mismatch; Movie cannot be converted to CAP#1)
+    method List.add(CAP#1) is not applicable
+      (argument mismatch; Movie cannot be converted to CAP#1)
+    method AbstractCollection.add(CAP#1) is not applicable
+      (argument mismatch; Movie cannot be converted to CAP#1)
+    method AbstractList.add(CAP#1) is not applicable
+      (argument mismatch; Movie cannot be converted to CAP#1)
+    method ArrayList.add(CAP#1) is not applicable
+      (argument mismatch; Movie cannot be converted to CAP#1)
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends Object from capture of ?
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+ 
+========================= 
+ExtendJ errors for Code3.java 
+ 
+========================= 
+Eclipse ECJ errors for Code3.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_WildCard\Code3.java (at line 42)
+	objecten.add(new Movie("Inception", Rating.MATURE));
+	         ^^^
+The method add(Double) in the type ArrayList<Double> is not applicable for the arguments (Movie)
+----------
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_WildCard\Code3.java (at line 55)
+	items.add(new Movie("Inception", Rating.MATURE));
+	      ^^^
+The method add(capture#1-of ?) in the type ArrayList<capture#1-of ?> is not applicable for the arguments (Movie)
+----------
+2 problems (2 errors)

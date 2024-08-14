@@ -1,0 +1,27 @@
+javac errors for Code1.java 
+Code1.java:30: error: no suitable method found for add(T)
+        list.add(element); 
+            ^
+    method Collection.add(CAP#1) is not applicable
+      (argument mismatch; T cannot be converted to CAP#1)
+    method List.add(CAP#1) is not applicable
+      (argument mismatch; T cannot be converted to CAP#1)
+  where T is a type-variable:
+    T extends Object declared in method <T>addElement(List<?>,T)
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends Object from capture of ?
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+ 
+========================= 
+ExtendJ errors for Code1.java 
+ 
+========================= 
+Eclipse ECJ errors for Code1.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_WildCard\Code1.java (at line 30)
+	list.add(element); 
+	     ^^^
+The method add(capture#4-of ?) in the type List<capture#4-of ?> is not applicable for the arguments (T)
+----------
+1 problem (1 error)

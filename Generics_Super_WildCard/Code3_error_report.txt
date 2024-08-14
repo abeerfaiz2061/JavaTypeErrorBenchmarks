@@ -1,0 +1,38 @@
+javac errors for Code3.java 
+Code3.java:18: error: method processList in class Code3 cannot be applied to given types;
+        processList(strings, "another");
+        ^
+  required: List<? super Object>,T
+  found: List<String>,String
+  reason: cannot infer type-variable(s) T
+    (argument mismatch; List<String> cannot be converted to List<? super Object>)
+  where T is a type-variable:
+    T extends Object declared in method <T>processList(List<? super Object>,T)
+Code3.java:27: error: method processList in class Code3 cannot be applied to given types;
+        processList(integers, 10);
+        ^
+  required: List<? super Object>,T
+  found: List<Integer>,int
+  reason: cannot infer type-variable(s) T
+    (argument mismatch; List<Integer> cannot be converted to List<? super Object>)
+  where T is a type-variable:
+    T extends Object declared in method <T>processList(List<? super Object>,T)
+2 errors
+ 
+========================= 
+ExtendJ errors for Code3.java 
+ 
+========================= 
+Eclipse ECJ errors for Code3.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_WildCard\Code3.java (at line 18)
+	processList(strings, "another");
+	^^^^^^^^^^^
+The method processList(List<? super Object>, T) in the type Code3 is not applicable for the arguments (List<String>, String)
+----------
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_WildCard\Code3.java (at line 27)
+	processList(integers, 10);
+	^^^^^^^^^^^
+The method processList(List<? super Object>, T) in the type Code3 is not applicable for the arguments (List<Integer>, int)
+----------
+2 problems (2 errors)

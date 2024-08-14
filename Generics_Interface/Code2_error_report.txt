@@ -1,0 +1,24 @@
+javac errors for Code2.java 
+Code2.java:4: error: cannot find symbol
+  class Integer implements Comparable<T> {
+                                      ^
+  symbol: class T
+1 error
+ 
+========================= 
+ExtendJ errors for Code2.java 
+ 
+========================= 
+Eclipse ECJ errors for Code2.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Interface\Code2.java (at line 4)
+	class Integer implements Comparable<T> {
+	      ^^^^^^^
+The type Integer must implement the inherited abstract method Comparable<T>.compareTo(T)
+----------
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Interface\Code2.java (at line 4)
+	class Integer implements Comparable<T> {
+	                                    ^
+T cannot be resolved to a type
+----------
+2 problems (2 errors)

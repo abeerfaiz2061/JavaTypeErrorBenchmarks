@@ -1,0 +1,31 @@
+javac errors for Code9.java 
+Code9.java:7: error: incompatible types: ArrayList<T> cannot be converted to List<? super Number>
+        List<? super Number> tmp = new ArrayList<T>(list);
+                                   ^
+  where T is a type-variable:
+    T extends Number declared in method <T>reverse(List<T>)
+Code9.java:10: error: incompatible types: Object cannot be converted to T
+            list.set(i, tmp.get(list.size() - i - 1));
+                               ^
+  where T is a type-variable:
+    T extends Number declared in method <T>reverse(List<T>)
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+ 
+========================= 
+ExtendJ errors for Code9.java 
+ 
+========================= 
+Eclipse ECJ errors for Code9.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_Extend_WildCard\Code9.java (at line 7)
+	List<? super Number> tmp = new ArrayList<T>(list);
+	                           ^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from ArrayList<T> to List<? super Number>
+----------
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_Extend_WildCard\Code9.java (at line 10)
+	list.set(i, tmp.get(list.size() - i - 1));
+	     ^^^
+The method set(int, T) in the type List<T> is not applicable for the arguments (int, capture#1-of ? super Number)
+----------
+2 problems (2 errors)

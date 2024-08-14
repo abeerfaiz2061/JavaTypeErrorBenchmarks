@@ -1,0 +1,65 @@
+javac errors for Code6.java 
+Code6.java:28: error: incompatible types: inference variable K#1 has incompatible bounds
+                .sorted(Map.Entry.comparingByKey())
+                                                ^
+    equality constraints: K#2
+    upper bounds: Comparable<? super K#1>
+  where K#1,V,K#2 are type-variables:
+    K#1 extends Comparable<? super K#1> declared in method <K#1,V>comparingByKey()
+    V extends Object declared in method <K#1,V>comparingByKey()
+    K#2 extends Object declared in class Code6
+Code6.java:33: error: no suitable method found for comparingByKey(Comparator<T>)
+                .sorted(Map.Entry.<K, T>comparingByKey(Comparator.reverseOrder())) // This will cause a compile-time error
+                                 ^
+    method Entry.<K#1,V#1>comparingByKey() is not applicable
+      (explicit type argument K#2 does not conform to declared bound(s) Comparable<? super K#2>)
+    method Entry.<K#3,V#2>comparingByKey(Comparator<? super K#3>) is not applicable
+      (argument mismatch; inferred type does not conform to upper bound(s)
+          inferred: K#2
+          upper bound(s): Comparable<? super K#2>)
+  where T,K#1,V#1,K#2,K#3,V#2 are type-variables:
+    T extends Comparable<? super T>
+    K#1 extends Comparable<? super K#1> declared in method <K#1,V#1>comparingByKey()
+    V#1 extends Object declared in method <K#1,V#1>comparingByKey()
+    K#2 extends Object declared in class Code6
+    K#3 extends Object declared in method <K#3,V#2>comparingByKey(Comparator<? super K#3>)
+    V#2 extends Object declared in method <K#3,V#2>comparingByKey(Comparator<? super K#3>)
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+ 
+============================================================================= 
+ExtendJ errors for Code6.java 
+Fatal exception:
+java.lang.NullPointerException
+	at org.extendj.ast.LambdaExpr.toClass(LambdaExpr.java:351)
+	at org.extendj.ast.LambdaExpr.anonymousDecl(LambdaExpr.java:367)
+	at org.extendj.ast.LambdaExpr.Define_enclosingLambdaType(LambdaExpr.java:1472)
+	at org.extendj.ast.ASTNode.Define_enclosingLambdaType(ASTNode.java:4093)
+	at org.extendj.ast.InferredParameterDeclaration.enclosingLambdaType(InferredParameterDeclaration.java:859)
+	at org.extendj.ast.InferredParameterDeclaration.hostType(InferredParameterDeclaration.java:656)
+	at org.extendj.ast.VarAccess.nameProblems(VarAccess.java:812)
+	at org.extendj.ast.VarAccess.contributeTo_CompilationUnit_problems(VarAccess.java:1293)
+	at org.extendj.ast.CompilationUnit.problems_compute(CompilationUnit.java:1547)
+	at org.extendj.ast.CompilationUnit.problems(CompilationUnit.java:1526)
+	at org.extendj.ast.CompilationUnit.errors(CompilationUnit.java:709)
+	at org.extendj.ast.Frontend.processCompilationUnit(Frontend.java:246)
+	at org.extendj.JavaCompiler.processCompilationUnit(JavaCompiler.java:107)
+	at org.extendj.ast.Frontend.run(Frontend.java:169)
+	at org.extendj.JavaCompiler.run(JavaCompiler.java:101)
+	at org.extendj.JavaCompiler.main(JavaCompiler.java:61)
+	at org.jastadd.extendj.JavaCompiler.main(JavaCompiler.java:39)
+ 
+============================================================================= 
+Eclipse ECJ errors for Code6.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code6.java (at line 28)
+	.sorted(Map.Entry.comparingByKey())
+	 ^^^^^^
+The method sorted(Comparator<? super Map.Entry<K,T>>) in the type Stream<Map.Entry<K,T>> is not applicable for the arguments (Comparator<Map.Entry<Comparable<? super Comparable<? super K>>,Object>>)
+----------
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code6.java (at line 33)
+	.sorted(Map.Entry.<K, T>comparingByKey(Comparator.reverseOrder())) // This will cause a compile-time error
+	                        ^^^^^^^^^^^^^^
+The parameterized method <K, T>comparingByKey(Comparator<? super K>) of type Map.Entry is not applicable for the arguments (Comparator<Comparable<? super Comparable<? super T>>>)
+----------
+2 problems (2 errors)

@@ -1,0 +1,33 @@
+javac errors for Code1.java 
+Code1.java:28: error: type argument T#1 is not within bounds of type-variable T#2
+class MinMaxImpl<T> implements MinMax<T> {
+                                      ^
+  where T#1,T#2 are type-variables:
+    T#1 extends Object declared in class MinMaxImpl
+    T#2 extends Comparable<T#2> declared in interface MinMax
+Note: Code1.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 error
+ 
+========================= 
+ExtendJ errors for Code1.java 
+ 
+========================= 
+Eclipse ECJ errors for Code1.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Interface_Extend\Code1.java (at line 28)
+	class MinMaxImpl<T> implements MinMax<T> {
+	                                      ^
+Bound mismatch: The type T is not a valid substitute for the bounded parameter <T extends Comparable<T>> of the type MinMax<T>
+----------
+2. WARNING in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Interface_Extend\Code1.java (at line 39)
+	if (((Comparable<T>)vals[i]).compareTo(v) < 0) { // Unsafe cast leading to compile-time error
+	    ^^^^^^^^^^^^^^^^^^^^^^^^
+Type safety: Unchecked cast from T to Comparable<T>
+----------
+3. WARNING in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Interface_Extend\Code1.java (at line 51)
+	if (((Comparable<T>)vals[i]).compareTo(v) > 0) { // Unsafe cast leading to compile-time error
+	    ^^^^^^^^^^^^^^^^^^^^^^^^
+Type safety: Unchecked cast from T to Comparable<T>
+----------
+3 problems (1 error, 2 warnings)

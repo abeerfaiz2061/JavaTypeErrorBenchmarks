@@ -1,0 +1,37 @@
+javac errors for Code7.java 
+Code7.java:36: error: incompatible types: int cannot be converted to String
+        typeStrFromRaw.set(123);
+                           ^
+Note: Code7.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+ 
+============================================================================= 
+ExtendJ errors for Code7.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code7.java:36: error: no method named set(int) in Code7<java.lang.String> matches. However, there is a method set(java.lang.String)
+ 
+============================================================================= 
+Eclipse ECJ errors for Code7.java 
+----------
+1. WARNING in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code7.java (at line 30)
+	rawType.set("Ramesh");
+	^^^^^^^^^^^^^^^^^^^^^
+Type safety: The method set(Object) belongs to the raw type Code7. References to generic type Code7<T> should be parameterized
+----------
+2. WARNING in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code7.java (at line 31)
+	rawType.set(10); 
+	^^^^^^^^^^^^^^^
+Type safety: The method set(Object) belongs to the raw type Code7. References to generic type Code7<T> should be parameterized
+----------
+3. WARNING in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code7.java (at line 33)
+	Code7<String> typeStrFromRaw = (Code7<String>) rawType; 
+	                               ^^^^^^^^^^^^^^^^^^^^^^^
+Type safety: Unchecked cast from Code7 to Code7<String>
+----------
+4. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code7.java (at line 36)
+	typeStrFromRaw.set(123);
+	               ^^^
+The method set(String) in the type Code7<String> is not applicable for the arguments (int)
+----------
+4 problems (1 error, 3 warnings)

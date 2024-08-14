@@ -1,0 +1,51 @@
+javac errors for Code4.java 
+Code4.java:21: error: no suitable method found for reduce(Function<Object,Object>,Function::andThen)
+                .reduce(Function.identity(), Function::andThen) 
+                ^
+    method Stream.reduce(Function<Color,T#1>,BinaryOperator<Function<Color,T#1>>) is not applicable
+      (argument mismatch; inferred type does not conform to equality constraint(s)
+          inferred: T#1
+          equality constraints(s): T#1,Color)
+    method Stream.<U>reduce(U,BiFunction<U,? super Function<Color,T#1>,U>,BinaryOperator<U>) is not applicable
+      (cannot infer type-variable(s) U
+        (actual and formal argument lists differ in length))
+  where T#1,U,T#2 are type-variables:
+    T#1 extends Object declared in method <T#1>applyFilters(Function<Color,T#1>...)
+    U extends Object declared in method <U>reduce(U,BiFunction<U,? super T#2,U>,BinaryOperator<U>)
+    T#2 extends Object declared in interface Stream
+Code4.java:32: error: method applyFilters in class Code4 cannot be applied to given types;
+        test.applyFilters(filter1, filter2);
+            ^
+  required: Function<Color,T>[]
+  found: Function<Color,String>,Function<Color,Integer>
+  reason: inferred type does not conform to equality constraint(s)
+    inferred: Integer
+    equality constraints(s): Integer,String
+  where T is a type-variable:
+    T extends Object declared in method <T>applyFilters(Function<Color,T>...)
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+2 errors
+ 
+============================================================================= 
+ExtendJ errors for Code4.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code4.java:32: error: no method named applyFilters(java.util.function.Function<java.awt.Color, java.lang.String>, java.util.function.Function<java.awt.Color, java.lang.Integer>) in Generics.Code4 matches. However, there is a method applyFilters(Function[])
+ 
+============================================================================= 
+Eclipse ECJ errors for Code4.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code4.java (at line 21)
+	.reduce(Function.identity(), Function::andThen) 
+	 ^^^^^^
+The method reduce(Function<Color,T>, BinaryOperator<Function<Color,T>>) in the type Stream<Function<Color,T>> is not applicable for the arguments (Function<Object,Object>, Function::andThen)
+----------
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code4.java (at line 21)
+	.reduce(Function.identity(), Function::andThen) 
+	                             ^^^^^^^^^^^^^^^^^
+The type Function does not define andThen(Function<Color,T>, Function<Color,T>) that is applicable here
+----------
+3. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code4.java (at line 32)
+	test.applyFilters(filter1, filter2);
+	     ^^^^^^^^^^^^
+The method applyFilters(Function<Color,T>...) in the type Code4 is not applicable for the arguments (Function<Color,String>, Function<Color,Integer>)
+----------
+3 problems (3 errors)

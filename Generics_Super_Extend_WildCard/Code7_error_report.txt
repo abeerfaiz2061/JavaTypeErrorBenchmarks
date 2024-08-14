@@ -1,0 +1,25 @@
+javac errors for Code7.java 
+Code7.java:25: error: no suitable method found for add(int)
+        list.add(10); 
+            ^
+    method Collection.add(CAP#1) is not applicable
+      (argument mismatch; int cannot be converted to CAP#1)
+    method List.add(CAP#1) is not applicable
+      (argument mismatch; int cannot be converted to CAP#1)
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends Number from capture of ? extends Number
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+ 
+========================= 
+ExtendJ errors for Code7.java 
+ 
+========================= 
+Eclipse ECJ errors for Code7.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_Extend_WildCard\Code7.java (at line 25)
+	list.add(10); 
+	     ^^^
+The method add(int, capture#11-of ? extends Number) in the type List<capture#11-of ? extends Number> is not applicable for the arguments (int)
+----------
+1 problem (1 error)

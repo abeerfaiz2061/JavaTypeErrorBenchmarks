@@ -1,0 +1,105 @@
+javac errors for Code6.java 
+Code6.java:36: error: method comparingByValue in interface Entry<K,V#1> cannot be applied to given types;
+                .sorted(Map.Entry.<K, V>comparingByValue()) 
+                                 ^
+  required: no arguments
+  found: no arguments
+  reason: explicit type argument V#2 does not conform to declared bound(s) Comparable<? super V#2>
+  where K,V#1,V#2 are type-variables:
+    K extends Object declared in interface Entry
+    V#1 extends Object declared in interface Entry
+    V#2 extends Object declared in class Code6
+Code6.java:37: error: incompatible types: cannot infer type-variable(s) T,K#1,U,M,K#2,V#1
+                .collect(toMap(Map.Entry::getKey, Map.Entry::getValue,
+                              ^
+    (argument mismatch; invalid method reference
+      method getKey in interface Entry<K#3,V#2> cannot be applied to given types
+        required: no arguments
+        found: Object
+        reason: actual and formal argument lists differ in length)
+  where T,K#1,U,M,K#2,V#1,K#3,V#2 are type-variables:
+    T extends Object declared in method <T,K#1,U,M>toMap(Function<? super T,? extends K#1>,Function<? super T,? extends U>,BinaryOperator<U>,Supplier<M>)
+    K#1 extends Object declared in method <T,K#1,U,M>toMap(Function<? super T,? extends K#1>,Function<? super T,? extends U>,BinaryOperator<U>,Supplier<M>)
+    U extends Object declared in method <T,K#1,U,M>toMap(Function<? super T,? extends K#1>,Function<? super T,? extends U>,BinaryOperator<U>,Supplier<M>)
+    M extends Map<K#1,U> declared in method <T,K#1,U,M>toMap(Function<? super T,? extends K#1>,Function<? super T,? extends U>,BinaryOperator<U>,Supplier<M>)
+    K#2 extends Object declared in class LinkedHashMap
+    V#1 extends Object declared in class LinkedHashMap
+    K#3 extends Object declared in interface Entry
+    V#2 extends Object declared in interface Entry
+Code6.java:37: error: invalid method reference
+                .collect(toMap(Map.Entry::getKey, Map.Entry::getValue,
+                                                     ^
+  non-static method getValue() cannot be referenced from a static context
+  where V is a type-variable:
+    V extends Object declared in interface Entry
+Code6.java:37: error: invalid method reference
+                .collect(toMap(Map.Entry::getKey, Map.Entry::getValue,
+                                  ^
+  non-static method getKey() cannot be referenced from a static context
+  where K is a type-variable:
+    K extends Object declared in interface Entry
+Code6.java:43: error: no suitable method found for comparingByValue(Comparator<T>)
+                .sorted(Map.Entry.<K, V>comparingByValue(reverseOrder())) 
+                                 ^
+    method Entry.<K#1,V#1>comparingByValue() is not applicable
+      (explicit type argument V#2 does not conform to declared bound(s) Comparable<? super V#2>)
+    method Entry.<K#2,V#3>comparingByValue(Comparator<? super V#3>) is not applicable
+      (argument mismatch; inferred type does not conform to upper bound(s)
+          inferred: V#2
+          upper bound(s): Comparable<? super V#2>)
+  where T,K#1,V#1,V#2,K#2,V#3 are type-variables:
+    T extends Comparable<? super T>
+    K#1 extends Object declared in method <K#1,V#1>comparingByValue()
+    V#1 extends Comparable<? super V#1> declared in method <K#1,V#1>comparingByValue()
+    V#2 extends Object declared in class Code6
+    K#2 extends Object declared in method <K#2,V#3>comparingByValue(Comparator<? super V#3>)
+    V#3 extends Object declared in method <K#2,V#3>comparingByValue(Comparator<? super V#3>)
+Code6.java:44: error: incompatible types: cannot infer type-variable(s) T,K#1,U,M,K#2,V#1
+                .collect(toMap(Map.Entry::getKey, Map.Entry::getValue,
+                              ^
+    (argument mismatch; invalid method reference
+      method getKey in interface Entry<K#3,V#2> cannot be applied to given types
+        required: no arguments
+        found: Object
+        reason: actual and formal argument lists differ in length)
+  where T,K#1,U,M,K#2,V#1,K#3,V#2 are type-variables:
+    T extends Object declared in method <T,K#1,U,M>toMap(Function<? super T,? extends K#1>,Function<? super T,? extends U>,BinaryOperator<U>,Supplier<M>)
+    K#1 extends Object declared in method <T,K#1,U,M>toMap(Function<? super T,? extends K#1>,Function<? super T,? extends U>,BinaryOperator<U>,Supplier<M>)
+    U extends Object declared in method <T,K#1,U,M>toMap(Function<? super T,? extends K#1>,Function<? super T,? extends U>,BinaryOperator<U>,Supplier<M>)
+    M extends Map<K#1,U> declared in method <T,K#1,U,M>toMap(Function<? super T,? extends K#1>,Function<? super T,? extends U>,BinaryOperator<U>,Supplier<M>)
+    K#2 extends Object declared in class LinkedHashMap
+    V#1 extends Object declared in class LinkedHashMap
+    K#3 extends Object declared in interface Entry
+    V#2 extends Object declared in interface Entry
+Code6.java:44: error: invalid method reference
+                .collect(toMap(Map.Entry::getKey, Map.Entry::getValue,
+                                                     ^
+  non-static method getValue() cannot be referenced from a static context
+  where V is a type-variable:
+    V extends Object declared in interface Entry
+Code6.java:44: error: invalid method reference
+                .collect(toMap(Map.Entry::getKey, Map.Entry::getValue,
+                                  ^
+  non-static method getKey() cannot be referenced from a static context
+  where K is a type-variable:
+    K extends Object declared in interface Entry
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+8 errors
+ 
+========================= 
+ExtendJ errors for Code6.java 
+ 
+========================= 
+Eclipse ECJ errors for Code6.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_Extend_WildCard\Code6.java (at line 36)
+	.sorted(Map.Entry.<K, V>comparingByValue()) 
+	                        ^^^^^^^^^^^^^^^^
+Bound mismatch: The generic method comparingByValue() of type Map<K,V>.Entry<K,V> is not applicable for the arguments (). The inferred type V is not a valid substitute for the bounded parameter <V extends Comparable<? super V>>
+----------
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_Extend_WildCard\Code6.java (at line 43)
+	.sorted(Map.Entry.<K, V>comparingByValue(reverseOrder())) 
+	                        ^^^^^^^^^^^^^^^^
+The parameterized method <K, V>comparingByValue(Comparator<? super V>) of type Map.Entry is not applicable for the arguments (Comparator<Comparable<? super Comparable<? super T>>>)
+----------
+2 problems (2 errors)

@@ -1,0 +1,27 @@
+javac errors for Code4.java 
+Code4.java:57: error: method addItem in class Box<T> cannot be applied to given types;
+        box3.addItem(new Letter("This is a letter")); 
+            ^
+  required: U
+  found: Letter
+  reason: inferred type does not conform to upper bound(s)
+    inferred: Letter
+    upper bound(s): Phone
+  where U,T are type-variables:
+    U extends Phone declared in method <U>addItem(U)
+    T extends Object declared in class Box
+1 error
+ 
+============================================================================= 
+ExtendJ errors for Code4.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code4.java:57: error: no method named addItem(Letter) in Box<Phone> matches. However, there is a method addItem(Box<Phone>.addItem(Phone)@U)
+ 
+============================================================================= 
+Eclipse ECJ errors for Code4.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code4.java (at line 57)
+	box3.addItem(new Letter("This is a letter")); 
+	     ^^^^^^^
+The method addItem(U) in the type Box<Phone> is not applicable for the arguments (Letter)
+----------
+1 problem (1 error)

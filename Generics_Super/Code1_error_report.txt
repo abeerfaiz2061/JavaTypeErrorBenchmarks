@@ -1,0 +1,27 @@
+javac errors for Code1.java 
+Code1.java:14: error: method foo in class Code1 cannot be applied to given types;
+        foo(m1, m2, m3);
+        ^
+  required: Map<T,T>,Map<S,S>,Map<R,R>
+  found: Map<Integer,Double>,Map<Integer,Byte>,Map<Integer,Byte>
+  reason: inference variable T has incompatible bounds
+    equality constraints: Double,Integer
+    lower bounds: S,Integer,Byte
+  where T,S,R are type-variables:
+    T extends Object declared in method <T,S,R>foo(Map<T,T>,Map<S,S>,Map<R,R>)
+    S extends T declared in method <T,S,R>foo(Map<T,T>,Map<S,S>,Map<R,R>)
+    R extends S declared in method <T,S,R>foo(Map<T,T>,Map<S,S>,Map<R,R>)
+1 error
+ 
+========================= 
+ExtendJ errors for Code1.java 
+ 
+========================= 
+Eclipse ECJ errors for Code1.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super\Code1.java (at line 14)
+	foo(m1, m2, m3);
+	^^^
+The method foo(Map<T,T>, Map<S,S>, Map<R,R>) in the type Code1 is not applicable for the arguments (Map<Integer,Double>, Map<Integer,Byte>, Map<Integer,Byte>)
+----------
+1 problem (1 error)

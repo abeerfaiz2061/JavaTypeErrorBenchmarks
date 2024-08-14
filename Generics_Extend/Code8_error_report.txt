@@ -1,0 +1,58 @@
+javac errors for Code8.java 
+Code8.java:9: error: type argument ProductB is not within bounds of type-variable T
+        GenericFactory<ProductB> factoryB = new GenericFactory<>(ProductB.class);
+                       ^
+  where T is a type-variable:
+    T extends ProductA declared in class GenericFactory
+Code8.java:9: error: cannot infer type arguments for GenericFactory<>
+        GenericFactory<ProductB> factoryB = new GenericFactory<>(ProductB.class);
+                                            ^
+  reason: inference variable T has incompatible bounds
+    equality constraints: ProductB
+    upper bounds: ProductA
+  where T is a type-variable:
+    T extends ProductA declared in class GenericFactory
+Code8.java:14: error: type argument ProductC is not within bounds of type-variable T
+        GenericFactory<ProductC> factoryC = new GenericFactory<>(ProductC.class);
+                       ^
+  where T is a type-variable:
+    T extends ProductA declared in class GenericFactory
+Code8.java:14: error: cannot infer type arguments for GenericFactory<>
+        GenericFactory<ProductC> factoryC = new GenericFactory<>(ProductC.class);
+                                            ^
+  reason: inference variable T has incompatible bounds
+    equality constraints: ProductC
+    upper bounds: ProductA
+  where T is a type-variable:
+    T extends ProductA declared in class GenericFactory
+4 errors
+ 
+============================================================================= 
+ExtendJ errors for Code8.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code8.java:9: error: type argument 1 is of type ProductB which is not within the bounds of type parameter T (T extends ProductA)
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code8.java:14: error: type argument 1 is of type ProductC which is not within the bounds of type parameter T (T extends ProductA)
+ 
+============================================================================= 
+Eclipse ECJ errors for Code8.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code8.java (at line 9)
+	GenericFactory<ProductB> factoryB = new GenericFactory<>(ProductB.class);
+	               ^^^^^^^^
+Bound mismatch: The type ProductB is not a valid substitute for the bounded parameter <T extends ProductA> of the type GenericFactory<T>
+----------
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code8.java (at line 9)
+	GenericFactory<ProductB> factoryB = new GenericFactory<>(ProductB.class);
+	                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot infer type arguments for GenericFactory<>
+----------
+3. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code8.java (at line 14)
+	GenericFactory<ProductC> factoryC = new GenericFactory<>(ProductC.class);
+	               ^^^^^^^^
+Bound mismatch: The type ProductC is not a valid substitute for the bounded parameter <T extends ProductA> of the type GenericFactory<T>
+----------
+4. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code8.java (at line 14)
+	GenericFactory<ProductC> factoryC = new GenericFactory<>(ProductC.class);
+	                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Cannot infer type arguments for GenericFactory<>
+----------
+4 problems (4 errors)

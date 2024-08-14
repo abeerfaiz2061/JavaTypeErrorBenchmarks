@@ -1,0 +1,29 @@
+javac errors for Code11.java 
+Code11.java:17: error: method naturalOrder in class Code11 cannot be applied to given types;
+        return (T) max(coll, Code11.<U>naturalOrder());
+                                   ^
+  required: no arguments
+  found: no arguments
+  reason: explicit type argument U does not conform to declared bound(s) Comparable<? super U>
+  where U,T are type-variables:
+    U extends Comparable<? super T> declared in method <T,U>max(Collection<? extends T>)
+    T extends Object declared in method <T,U>max(Collection<? extends T>)
+1 error
+ 
+========================= 
+ExtendJ errors for Code11.java 
+ 
+========================= 
+Eclipse ECJ errors for Code11.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_Extend_WildCard\Code11.java (at line 17)
+	return (T) max(coll, Code11.<U>naturalOrder());
+	           ^^^
+The method max(Collection<? extends T>, Comparator<? super T>) in the type Code11 is not applicable for the arguments (Collection<capture#4-of ? extends T>, Comparator<U>)
+----------
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_Extend_WildCard\Code11.java (at line 17)
+	return (T) max(coll, Code11.<U>naturalOrder());
+	                               ^^^^^^^^^^^^
+Bound mismatch: The generic method naturalOrder() of type Code11 is not applicable for the arguments (). The inferred type U is not a valid substitute for the bounded parameter <T extends Comparable<? super T>>
+----------
+2 problems (2 errors)

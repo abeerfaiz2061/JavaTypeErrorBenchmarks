@@ -1,0 +1,23 @@
+javac errors for Code1.java 
+Code1.java:7: error: incompatible types: CAP#1 cannot be converted to F
+        for (F x : from) {
+                   ^
+  where E,F are type-variables:
+    E extends Object declared in class Code1
+    F extends E declared in class Code1
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends E from capture of ? extends E
+1 error
+ 
+========================= 
+ExtendJ errors for Code1.java 
+ 
+========================= 
+Eclipse ECJ errors for Code1.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_WildCard_CaptureConversion\Code1.java (at line 7)
+	for (F x : from) {
+	           ^^^^
+Type mismatch: cannot convert from element type capture#1-of ? extends E to F
+----------
+1 problem (1 error)

@@ -1,0 +1,19 @@
+javac errors for Code3.java 
+Code3.java:12: error: incompatible types: List<String> cannot be converted to List<? extends Number>
+        printItemsInList(strings);
+                         ^
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+1 error
+ 
+========================= 
+ExtendJ errors for Code3.java 
+ 
+========================= 
+Eclipse ECJ errors for Code3.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_WildCard\Code3.java (at line 12)
+	printItemsInList(strings);
+	^^^^^^^^^^^^^^^^
+The method printItemsInList(List<? extends Number>) in the type Code3 is not applicable for the arguments (List<String>)
+----------
+1 problem (1 error)

@@ -1,0 +1,26 @@
+javac errors for Code4.java 
+Code4.java:13: error: method addToList in class Code4 cannot be applied to given types;
+        addToList(stuff, "New Element"); 
+        ^
+  required: Collection<? super T>,T
+  found: List<CAP#1>,String
+  reason: cannot infer type-variable(s) T
+    (argument mismatch; List<CAP#1> cannot be converted to Collection<? super T>)
+  where T is a type-variable:
+    T extends Object declared in method <T>addToList(Collection<? super T>,T)
+  where CAP#1 is a fresh type-variable:
+    CAP#1 extends Object from capture of ?
+1 error
+ 
+========================= 
+ExtendJ errors for Code4.java 
+ 
+========================= 
+Eclipse ECJ errors for Code4.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_WildCard\Code4.java (at line 13)
+	addToList(stuff, "New Element"); 
+	^^^^^^^^^
+The method addToList(Collection<? super T>, T) in the type Code4 is not applicable for the arguments (List<capture#3-of ?>, String)
+----------
+1 problem (1 error)

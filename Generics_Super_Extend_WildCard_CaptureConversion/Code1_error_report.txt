@@ -1,0 +1,18 @@
+javac errors for Code1.java 
+Code1.java:17: error: incompatible types: Code1<FilterInputStream> cannot be converted to Code1<? super InputStream>
+        Code1<? super InputStream> ce = new Code1<FilterInputStream>();
+                                        ^
+1 error
+ 
+========================= 
+ExtendJ errors for Code1.java 
+ 
+========================= 
+Eclipse ECJ errors for Code1.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_Extend_WildCard_CaptureConversion\Code1.java (at line 17)
+	Code1<? super InputStream> ce = new Code1<FilterInputStream>();
+	                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Type mismatch: cannot convert from Code1<FilterInputStream> to Code1<? super InputStream>
+----------
+1 problem (1 error)

@@ -1,0 +1,25 @@
+javac errors for Code2.java 
+Code2.java:30: error: method addElement in class Code2 cannot be applied to given types;
+		addElement(collection, 123); 
+		^
+  required: Collection<T>,T
+  found: Collection<String>,int
+  reason: inference variable T has incompatible bounds
+    equality constraints: String
+    lower bounds: Integer
+  where T is a type-variable:
+    T extends Object declared in method <T>addElement(Collection<T>,T)
+1 error
+ 
+========================= 
+ExtendJ errors for Code2.java 
+ 
+========================= 
+Eclipse ECJ errors for Code2.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_WildCard\Code2.java (at line 30)
+	addElement(collection, 123); 
+	^^^^^^^^^^
+The method addElement(Collection<T>, T) in the type Code2 is not applicable for the arguments (Collection<String>, int)
+----------
+1 problem (1 error)

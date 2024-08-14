@@ -1,0 +1,25 @@
+javac errors for Code2.java 
+Code2.java:17: error: method foo in class Code2 cannot be applied to given types;
+        List<Integer> ret = foo(m);
+                            ^
+  required: Map<T,? super T>
+  found: Map<Number,Integer>
+  reason: inference variable T has incompatible bounds
+    equality constraints: Number
+    upper bounds: Integer,Object
+  where T is a type-variable:
+    T extends Object declared in method <T>foo(Map<T,? super T>)
+1 error
+ 
+========================= 
+ExtendJ errors for Code2.java 
+ 
+========================= 
+Eclipse ECJ errors for Code2.java 
+----------
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super\Code2.java (at line 17)
+	List<Integer> ret = foo(m);
+	                    ^^^
+The method foo(Map<T,? super T>) in the type Code2 is not applicable for the arguments (Map<Number,Integer>)
+----------
+1 problem (1 error)
