@@ -62,10 +62,13 @@ Contributions to this research are highly encouraged. If you're interested in bu
 ## **Acknowledgments**
 I would like to acknowledge and give credit to the original authors of the code that contributed to the foundation of this project. Their work has significantly contributed to the development of this project:
 
-* kousen/generics
-* amigoscode/java-generics
-* vivin/GenericTree
-* RameshMF/java-generics-guide
-* c05mic/GenericN-aryTree
-* custersnele/JavaAdv_H5_Generics
-* hellojavaio/Java-Generics-and-Collections-2
+* [kousen/generics](https://github.com/kousen/generics)
+* [amigoscode/java-generics](https://github.com/amigoscode/java-generics)
+* [vivin/GenericTree](https://github.com/vivin/GenericTree)
+* [RameshMF/java-generics-guide](https://github.com/RameshMF/java-generics-guide)
+* [c05mic/GenericN-aryTree](https://github.com/c05mic/GenericN-aryTree)
+* [custersnele/JavaAdv_H5_Generics](https://github.com/custersnele/JavaAdv_H5_Generics)
+* [hellojavaio/Java-Generics-and-Collections-2](https://github.com/hellojavaio/Java-Generics-and-Collections-2)
+* [Corrective hints for type incorrect generic Java programs](https://dl.acm.org/doi/abs/10.1145/1706356.1706360)
+* [Improving type error messages for generic Java](https://www.researchgate.net/publication/220989982_Improving_type_error_messages_for_generic_Java)
+* [Java Generics Capture Conversion](https://www.geekyarticles.com/2011/11/java-generics-capture-conversion.html)
