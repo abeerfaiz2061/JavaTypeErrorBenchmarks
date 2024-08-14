@@ -5,6 +5,16 @@ This repository contains the codebase for my dissertation titled "**Collecting B
 * Eclipse's ecj Compiler
 * JastAdd's ExtendJ Compiler
 
+In this research, we focused on the following Java language specification features:
+
+* Generics and Type Parameters
+* Covariance
+* Contravariance
+* Wildcards
+* Capture Conversions
+* Variable Arity Methods
+
+These features were chosen due to their complexity and potential to introduce type-related errors, making them ideal for benchmarking and analysis across different compilers.
 
 ## **Repository Structure**
 
