@@ -23,14 +23,12 @@ class Cat extends Animal {
 
 public class Code2 {
 
-    // Covariant: Attempting to add to a List<? extends Animal> will cause a compile-time error
     public static void makeAnimalsSpeak(List<? extends Animal> animals) {
-        animals.add(new Cat()); // Compile-time error
+        animals.add(new Cat());
     }
 
-    // Contravariant: The following line tries to add an inappropriate type
     public static void addDogsToList(List<? super Dog> animals) {
-        animals.add(new Cat()); // Compile-time error
+        animals.add(new Cat());
     }
 
     public static void main(String[] args) {
@@ -44,9 +42,9 @@ public class Code2 {
         animals.add(new Cat());
         animals.add(new Dog());
 
-        makeAnimalsSpeak(dogs);   // List<Dog> can be passed
-        makeAnimalsSpeak(animals); // List<Animal> can be passed
+        makeAnimalsSpeak(dogs);
+        makeAnimalsSpeak(animals);
 
-        addDogsToList(cats); // Compile-time error: List<Dog> is not a supertype of Dog
+        addDogsToList(cats);
     }
 }

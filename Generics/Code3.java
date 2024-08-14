@@ -5,9 +5,7 @@ import java.util.List;
 
 public class Code3 {
 
-    // Method with generic parameters
     <T> void foo(List<T> a, List<T> b, List<T> c) {
-        // Using the lists in a way that introduces type incompatibility
         T itemFromA = a.get(0); 
         b.add(itemFromA);
         c.add(itemFromA);
@@ -19,11 +17,10 @@ public class Code3 {
         List<Integer> big = new ArrayList<>();
         List<Double> small = new ArrayList<>();
 
-        // This call is problematic because the types do not align
-        foo(src, big, small); // Error: Incompatible types
+        foo(src, big, small);
 
-        src.add(1.0); // Number
-        big.add(2);   // Integer
-        small.add(3.0); // Double
+        src.add(1.0);
+        big.add(2);
+        small.add(3.0);
     }
 }

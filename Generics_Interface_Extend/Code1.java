@@ -36,7 +36,7 @@ class MinMaxImpl<T> implements MinMax<T> {
         T v = vals[0];
 
         for (int i = 1; i < vals.length; i++) {
-            if (((Comparable<T>)vals[i]).compareTo(v) < 0) { // Unsafe cast leading to compile-time error
+            if (((Comparable<T>)vals[i]).compareTo(v) < 0) { 
                 v = vals[i];
             }
         }
@@ -48,7 +48,7 @@ class MinMaxImpl<T> implements MinMax<T> {
         T v = vals[0];
 
         for (int i = 1; i < vals.length; i++) {
-            if (((Comparable<T>)vals[i]).compareTo(v) > 0) { // Unsafe cast leading to compile-time error
+            if (((Comparable<T>)vals[i]).compareTo(v) > 0) { 
                 v = vals[i];
             }
         }

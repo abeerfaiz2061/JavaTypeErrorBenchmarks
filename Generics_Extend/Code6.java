@@ -20,7 +20,7 @@ public class Code6<T> {
         int numberOfNodes = 0;
 
         if(root != null) {
-            numberOfNodes = auxiliaryGetNumberOfNodes(root) + 1; //1 for the root!
+            numberOfNodes = auxiliaryGetNumberOfNodes(root) + 1;
         }
 
         return numberOfNodes;

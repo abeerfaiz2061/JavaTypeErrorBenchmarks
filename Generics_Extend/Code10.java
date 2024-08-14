@@ -23,7 +23,7 @@ public class Code10 {
 		
 		System.out.println(isEqual);
 
-		System.out.println(Code10.compare(123, "abc")); // Error
+		System.out.println(Code10.compare(123, "abc"));
 	}
 }
 

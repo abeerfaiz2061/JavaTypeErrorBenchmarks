@@ -1,6 +1,5 @@
 public class Code6<T> {
     public void unsafeMethod(T... args) {
-        // Compile-time error: generic array creation
         T[] array = new T[10];
     }
     

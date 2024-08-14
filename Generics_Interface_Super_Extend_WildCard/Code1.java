@@ -3,12 +3,10 @@ package Generics_Interface_Super_Extend_WildCard;
 import java.util.List;
 import java.util.ArrayList;
 
-// Generic interface
 interface Transformer<T, R> {
     R transform(T input);
 }
 
-// Implementing the interface
 class StringLengthTransformer implements Transformer<String, Integer> {
     @Override
     public Integer transform(String input) {
@@ -16,10 +14,8 @@ class StringLengthTransformer implements Transformer<String, Integer> {
     }
 }
 
-// Class using a generic transformer
 class Code1 {
 
-    // Method with upper bounded wildcard
     public static <T, R> List<R> processItems(List<T> items, Transformer<? super T, ? extends R> transformer) {
         List<R> results = new ArrayList<>();
         for (T item : items) {
@@ -34,10 +30,10 @@ class Code1 {
         strings.add("banana");
         strings.add("cherry");
 
-        Transformer<Object, Integer> transformer = new StringLengthTransformer(); // Compile-time error: incompatible types
+        Transformer<Object, Integer> transformer = new StringLengthTransformer();
         List<Integer> lengths = Code1.processItems(strings, transformer);
 
-        System.out.println(lengths); // Output: [5, 6, 6]
+        System.out.println(lengths);
     }
 }
 

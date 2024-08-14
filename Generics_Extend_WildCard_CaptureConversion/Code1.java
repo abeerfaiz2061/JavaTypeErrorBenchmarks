@@ -21,9 +21,4 @@ public class Code1<E, F extends E> {
 }
 
 
-
-
-//Analysis of the Error
-//Error location: The error is reported at the for loop where F x is used.
-//Cause of the error: The type F cannot be directly assigned from ? extends E because the wildcard introduces a level of abstraction that the compiler cannot resolve to F.
-//Better error location: Ideally, the error message should indicate that the issue arises due to the misuse of the wildcard in the method signature, but it instead points to the loop.
+// Original Code Credits - https://www.geekyarticles.com/2011/11/java-generics-capture-conversion.html

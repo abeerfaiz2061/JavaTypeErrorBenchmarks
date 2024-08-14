@@ -30,7 +30,7 @@ public class Code6<T, K> {
 
         System.out.println("Reverse sorted by key:");
         itemMap.entrySet().stream()
-                .sorted(Map.Entry.<K, T>comparingByKey(Comparator.reverseOrder())) // This will cause a compile-time error
+                .sorted(Map.Entry.<K, T>comparingByKey(Comparator.reverseOrder()))
                 .forEach(entry -> System.out.println(entry.getKey() + ": " + entry.getValue()));
 
         System.out.println("Sorted by value:");

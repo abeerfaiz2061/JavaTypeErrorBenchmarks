@@ -20,7 +20,7 @@ public class Code5<T> {
         int numberOfNodes = 0;
 
         if(root != null) {
-            numberOfNodes = auxiliaryGetNumberOfNodes(root) + 1; //1 for the root!
+            numberOfNodes = auxiliaryGetNumberOfNodes(root) + 1;
         }
 
         return numberOfNodes;
@@ -174,21 +174,17 @@ public class Code5<T> {
     }
 }
 
-// A new class that causes a compile-time error due to invalid type constraints
 class StringTree extends Code5<Integer> {
-    // Attempt to override a method with a conflicting generic type
     @Override
     public GenericTreeNode<String> getRoot() {
         return new GenericTreeNode<>();
     }
 
-    // Attempt to use a different type in a method that should be consistent with the class generic type
     public void setRoot(GenericTreeNode<String> root) {
-        super.setRoot(root);  // Causes a compile-time error due to type mismatch
+        super.setRoot(root);
     }
 }
 
-// GenericTreeNode class definition
 class GenericTreeNode<T> {
     private T data;
     private List<GenericTreeNode<T>> children = new ArrayList<>();

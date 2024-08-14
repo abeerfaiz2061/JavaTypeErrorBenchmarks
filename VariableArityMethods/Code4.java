@@ -13,7 +13,6 @@ public class Code4<T extends Number> {
         Code4<Integer> example = new Code4<>();
         List<Number> numberList = new ArrayList<>();
         
-        // Compile-time error: incompatible types: String cannot be converted to Integer
         example.addNumbers(numberList, 1, 2, "Three");
     }
 }

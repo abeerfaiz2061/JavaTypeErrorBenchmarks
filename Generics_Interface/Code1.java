@@ -12,12 +12,9 @@ public class Code1 {
 		System.out.println(p3.getKey());
 		System.out.println(p3.getValue().getName());
 		
-		// Introduce a compile-time type error here
-		// The error is introduced by assigning a pair of incompatible types
-		// which cannot be safely cast or assigned
-		OrderedPair<String, Integer> p4 = new OrderedPair<>(new Employee("John"), "Doe"); // Error
-		System.out.println(p4.getKey()); // This will cause a compile-time error
-		System.out.println(p4.getValue()); // This will also cause a compile-time error
+		OrderedPair<String, Integer> p4 = new OrderedPair<>(new Employee("John"), "Doe"); 
+		System.out.println(p4.getKey()); 
+		System.out.println(p4.getValue());
 	}
 }
 
