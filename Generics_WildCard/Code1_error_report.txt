@@ -13,13 +13,14 @@ Code1.java:30: error: no suitable method found for add(T)
 Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
 1 error
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code1.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_WildCard\Code1.java:8: error: cannot assign variable list1 of type java.util.List<java.lang.Object> a value of type java.util.List<java.io.Serializable & java.lang.Comparable<? extends & java.util.Date& java.lang.Integer & java.lang.String>>
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code1.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_WildCard\Code1.java (at line 30)
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_WildCard\Code1.java (at line 30)
 	list.add(element); 
 	     ^^^
 The method add(capture#4-of ?) in the type List<capture#4-of ?> is not applicable for the arguments (T)

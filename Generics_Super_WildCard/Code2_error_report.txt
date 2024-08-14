@@ -1,6 +1,6 @@
 javac errors for Code2.java 
-Code2.java:28: error: no suitable method found for add(Cat)
-        animals.add(new Cat()); // Compile-time error
+Code2.java:27: error: no suitable method found for add(Cat)
+        animals.add(new Cat());
                ^
     method Collection.add(CAP#1) is not applicable
       (argument mismatch; Cat cannot be converted to CAP#1)
@@ -8,8 +8,8 @@ Code2.java:28: error: no suitable method found for add(Cat)
       (argument mismatch; Cat cannot be converted to CAP#1)
   where CAP#1 is a fresh type-variable:
     CAP#1 extends Animal from capture of ? extends Animal
-Code2.java:33: error: no suitable method found for add(Cat)
-        animals.add(new Cat()); // Compile-time error
+Code2.java:31: error: no suitable method found for add(Cat)
+        animals.add(new Cat());
                ^
     method Collection.add(CAP#1) is not applicable
       (argument mismatch; Cat cannot be converted to CAP#1)
@@ -17,30 +17,33 @@ Code2.java:33: error: no suitable method found for add(Cat)
       (argument mismatch; Cat cannot be converted to CAP#1)
   where CAP#1 is a fresh type-variable:
     CAP#1 extends Object super: Dog from capture of ? super Dog
-Code2.java:50: error: incompatible types: List<Cat> cannot be converted to List<? super Dog>
-        addDogsToList(cats); // Compile-time error: List<Dog> is not a supertype of Dog
+Code2.java:48: error: incompatible types: List<Cat> cannot be converted to List<? super Dog>
+        addDogsToList(cats);
                       ^
 Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
 3 errors
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code2.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Super_WildCard\Code2.java:27: error: no method named add(Cat) in java.util.List<? extends Animal> matches. However, there is a method add(wildcards.? extends Animal)
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Super_WildCard\Code2.java:31: error: no method named add(Cat) in java.util.List<? super Dog> matches. However, there is a method add(wildcards.? super Dog)
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Super_WildCard\Code2.java:48: error: no method named addDogsToList(java.util.List<Cat>) in Code2 matches. However, there is a method addDogsToList(java.util.List<? super Dog>)
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code2.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_WildCard\Code2.java (at line 28)
-	animals.add(new Cat()); // Compile-time error
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Super_WildCard\Code2.java (at line 27)
+	animals.add(new Cat());
 	        ^^^
 The method add(capture#1-of ? extends Animal) in the type List<capture#1-of ? extends Animal> is not applicable for the arguments (Cat)
 ----------
-2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_WildCard\Code2.java (at line 33)
-	animals.add(new Cat()); // Compile-time error
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Super_WildCard\Code2.java (at line 31)
+	animals.add(new Cat());
 	        ^^^
 The method add(capture#2-of ? super Dog) in the type List<capture#2-of ? super Dog> is not applicable for the arguments (Cat)
 ----------
-3. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_WildCard\Code2.java (at line 50)
-	addDogsToList(cats); // Compile-time error: List<Dog> is not a supertype of Dog
+3. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Super_WildCard\Code2.java (at line 48)
+	addDogsToList(cats);
 	^^^^^^^^^^^^^
 The method addDogsToList(List<? super Dog>) in the type Code2 is not applicable for the arguments (List<Cat>)
 ----------

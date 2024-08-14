@@ -1,20 +1,21 @@
 javac errors for Code1.java 
-Code1.java:18: error: incompatible types: Object cannot be converted to CAP#1
-        ce.readFromIt(obj);//This is an error, because the capture converted type has an upper bound InputStream from the original declaration
+Code1.java:14: error: incompatible types: Object cannot be converted to CAP#1
+        ce.readFromIt(obj);
                       ^
   where CAP#1 is a fresh type-variable:
     CAP#1 extends InputStream from capture of ?
 Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
 1 error
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code1.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_CaptureConversion\Code1.java:14: error: no method named readFromIt(java.lang.Object) in Code1<?> matches. However, there is a method readFromIt(wildcards.? extends InputStream)
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code1.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_CaptureConversion\Code1.java (at line 18)
-	ce.readFromIt(obj);//This is an error, because the capture converted type has an upper bound InputStream from the original declaration
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_CaptureConversion\Code1.java (at line 14)
+	ce.readFromIt(obj);
 	   ^^^^^^^^^^
 The method readFromIt(capture#1-of ?) in the type Code1<capture#1-of ?> is not applicable for the arguments (Object)
 ----------

@@ -7,18 +7,19 @@ Code7.java:13: error: incompatible types: E cannot be converted to Integer
 Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
 1 error
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code7.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Super_WildCard\Code7.java:13: error: no method named compare(E, E) in java.util.Comparator<java.lang.Integer> matches. However, there is a method compare(java.lang.Integer, java.lang.Integer)
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code7.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_WildCard\Code7.java (at line 13)
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Super_WildCard\Code7.java (at line 13)
 	int k = ((Comparator<Integer>) comp).compare(list1.get(i), list2.get(i)); 
 	                                     ^^^^^^^
 The method compare(Integer, Integer) in the type Comparator<Integer> is not applicable for the arguments (E, E)
 ----------
-2. WARNING in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_WildCard\Code7.java (at line 23)
+2. WARNING in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Super_WildCard\Code7.java (at line 23)
 	Comparator<List<Integer>> comp = listComparator(intComp);
 	                          ^^^^
 The value of the local variable comp is not used

@@ -1,6 +1,6 @@
 javac errors for Code2.java 
-Code2.java:25: error: no suitable method found for add(Box<Integer>)
-        boxes.add(new Box<>(3)); // Compile-time error: Cannot add to list with bounded wildcard
+Code2.java:23: error: no suitable method found for add(Box<Integer>)
+        boxes.add(new Box<>(3));
              ^
     method Collection.add(CAP#1) is not applicable
       (argument mismatch; cannot infer type arguments for Box<>
@@ -12,8 +12,8 @@ Code2.java:25: error: no suitable method found for add(Box<Integer>)
     T extends Number declared in class Box
   where CAP#1 is a fresh type-variable:
     CAP#1 extends Box<? extends Number> from capture of ? extends Box<? extends Number>
-Code2.java:32: error: cannot infer type arguments for Box<>
-        boxes.add(new Box<>("string")); // Compile-time error: String is not a Number
+Code2.java:29: error: cannot infer type arguments for Box<>
+        boxes.add(new Box<>("string"));
                   ^
   reason: inferred type does not conform to upper bound(s)
     inferred: String
@@ -21,24 +21,28 @@ Code2.java:32: error: cannot infer type arguments for Box<>
 Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
 2 errors
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code2.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code2.java:23: error: no method named add(Box<java.lang.Integer>) in java.util.List<? extends Box> matches. However, there is a method add(wildcards.? extends Box)
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code2.java:27: error: argument 'new Box<>(5)' of type Box<java.lang.Integer> is not compatible with the method parameter type ? super Box
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code2.java:28: error: argument 'new Box<>(10.5)' of type Box<java.lang.Double> is not compatible with the method parameter type ? super Box
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code2.java:29: error: cannot instantiate Box no matching constructor found in Box
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code2.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_WildCard\Code2.java (at line 25)
-	boxes.add(new Box<>(3)); // Compile-time error: Cannot add to list with bounded wildcard
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code2.java (at line 23)
+	boxes.add(new Box<>(3));
 	      ^^^
 The method add(capture#4-of ? extends Box<? extends Number>) in the type List<capture#4-of ? extends Box<? extends Number>> is not applicable for the arguments (new Box<>(3))
 ----------
-2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_WildCard\Code2.java (at line 25)
-	boxes.add(new Box<>(3)); // Compile-time error: Cannot add to list with bounded wildcard
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code2.java (at line 23)
+	boxes.add(new Box<>(3));
 	          ^^^^^^^^^^^^
 Cannot infer type arguments for Box<>
 ----------
-3. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_WildCard\Code2.java (at line 32)
-	boxes.add(new Box<>("string")); // Compile-time error: String is not a Number
+3. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code2.java (at line 29)
+	boxes.add(new Box<>("string"));
 	          ^^^^^^^^^^^^^^^^^^^
 Cannot infer type arguments for Box<>
 ----------

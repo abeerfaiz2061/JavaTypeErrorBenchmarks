@@ -1,6 +1,6 @@
 javac errors for Code1.java 
-Code1.java:18: error: incompatible types: cannot infer type arguments for OrderedPair<>
-		OrderedPair<String, Integer> p4 = new OrderedPair<>(new Employee("John"), "Doe"); // Error
+Code1.java:15: error: incompatible types: cannot infer type arguments for OrderedPair<>
+		OrderedPair<String, Integer> p4 = new OrderedPair<>(new Employee("John"), "Doe"); 
 		                                                 ^
     reason: inference variable K has incompatible bounds
       equality constraints: String
@@ -9,14 +9,15 @@ Code1.java:18: error: incompatible types: cannot infer type arguments for Ordere
     K extends Object declared in class OrderedPair
 1 error
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code1.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Interface\Code1.java:15: error: cannot assign variable p4 of type OrderedPair<java.lang.String, java.lang.Integer> a value of type OrderedPair<Employee, java.lang.String>
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code1.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Interface\Code1.java (at line 18)
-	OrderedPair<String, Integer> p4 = new OrderedPair<>(new Employee("John"), "Doe"); // Error
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Interface\Code1.java (at line 15)
+	OrderedPair<String, Integer> p4 = new OrderedPair<>(new Employee("John"), "Doe"); 
 	                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Cannot infer type arguments for OrderedPair<>
 ----------

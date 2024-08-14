@@ -13,18 +13,19 @@ Note: Code1.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 1 error
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code1.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_VariableArityMethod\Code1.java:16: error: no method named toList(java.lang.String, java.lang.String, java.lang.String) in Code1 matches. However, there is a method toList(T[])
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code1.java 
 ----------
-1. WARNING in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_VariableArityMethod\Code1.java (at line 5)
+1. WARNING in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_VariableArityMethod\Code1.java (at line 5)
 	public static <T extends Number> List<T> toList(T... arr) {
 	                                                     ^^^
 Type safety: Potential heap pollution via varargs parameter arr
 ----------
-2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_VariableArityMethod\Code1.java (at line 16)
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_VariableArityMethod\Code1.java (at line 16)
 	List<String> strList = Code1.toList("a", "b", "c");
 	                             ^^^^^^
 The method toList(T...) in the type Code1 is not applicable for the arguments (String, String, String)

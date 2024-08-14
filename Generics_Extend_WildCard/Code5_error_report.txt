@@ -13,13 +13,14 @@ Code5.java:9: error: no suitable method found for add(T)
 Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
 1 error
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code5.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code5.java:9: error: no method named add(T) in java.util.List<? extends Object> matches. However, there is a method add(wildcards.? extends Object)
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code5.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_WildCard\Code5.java (at line 9)
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code5.java (at line 9)
 	list.add(element); 
 	     ^^^
 The method add(capture#1-of ? extends Object) in the type List<capture#1-of ? extends Object> is not applicable for the arguments (T)

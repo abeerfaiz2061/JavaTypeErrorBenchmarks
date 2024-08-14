@@ -8,14 +8,13 @@ class Pair<T extends U, U extends T> {
  
 ============================================================================= 
 ExtendJ errors for Code12.java 
-Encountered error while processing C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code12.java
+Encountered error while processing C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend\Code12.java
 Fatal exception:
 java.lang.StackOverflowError
 	at java.util.HashMap.hash(Unknown Source)
 	at java.util.HashMap.get(Unknown Source)
 	at org.extendj.ast.TypeDecl.localTypeDecls(TypeDecl.java:2786)
 	at org.extendj.ast.ClassDecl.memberTypes(ClassDecl.java:1466)
-	at org.extendj.ast.ClassDecl.memberTypes(ClassDecl.java:1478)
 	at org.extendj.ast.GenericClassDecl.Define_lookupType(GenericClassDecl.java:1434)
 	at org.extendj.ast.ASTNode.Define_lookupType(ASTNode.java:2013)
 	at org.extendj.ast.TypeDecl.Define_lookupType(TypeDecl.java:8793)
@@ -1035,11 +1034,12 @@ java.lang.StackOverflowError
 	at org.extendj.ast.TypeVariable.erasure(TypeVariable.java:1133)
 	at org.extendj.ast.TypeVariable.erasure_compute(TypeVariable.java:1146)
 	at org.extendj.ast.TypeVariable.erasure(TypeVariable.java:1133)
+	at org.extendj.ast.TypeVariable.erasure_compute(TypeVariable.java:1146)
  
 ============================================================================= 
 Eclipse ECJ errors for Code12.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code12.java (at line 1)
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend\Code12.java (at line 1)
 	class Pair<T extends U, U extends T> {
 	                                  ^
 Cycle detected: a cycle exists in the type hierarchy between U and T

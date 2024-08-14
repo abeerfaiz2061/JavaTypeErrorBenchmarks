@@ -10,18 +10,19 @@ Code11.java:17: error: method naturalOrder in class Code11 cannot be applied to 
     T extends Object declared in method <T,U>max(Collection<? extends T>)
 1 error
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code11.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Super_Extend_WildCard\Code11.java:17: error: no method named max(java.util.Collection<? extends T>, java.util.Comparator<U>) in Code11 matches. However, there is a method max(java.util.Collection<? extends T>, java.util.Comparator<? super T>)
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code11.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_Extend_WildCard\Code11.java (at line 17)
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Super_Extend_WildCard\Code11.java (at line 17)
 	return (T) max(coll, Code11.<U>naturalOrder());
 	           ^^^
 The method max(Collection<? extends T>, Comparator<? super T>) in the type Code11 is not applicable for the arguments (Collection<capture#4-of ? extends T>, Comparator<U>)
 ----------
-2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_Extend_WildCard\Code11.java (at line 17)
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Super_Extend_WildCard\Code11.java (at line 17)
 	return (T) max(coll, Code11.<U>naturalOrder());
 	                               ^^^^^^^^^^^^
 Bound mismatch: The generic method naturalOrder() of type Code11 is not applicable for the arguments (). The inferred type U is not a valid substitute for the bounded parameter <T extends Comparable<? super T>>

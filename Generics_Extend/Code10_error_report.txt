@@ -1,6 +1,6 @@
 javac errors for Code10.java 
 Code10.java:26: error: method compare in class Code10 cannot be applied to given types;
-		System.out.println(Code10.compare(123, "abc")); // Error
+		System.out.println(Code10.compare(123, "abc"));
 		                         ^
   required: T,T
   found: int,String
@@ -13,13 +13,13 @@ Code10.java:26: error: method compare in class Code10 cannot be applied to given
  
 ============================================================================= 
 ExtendJ errors for Code10.java 
-C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code10.java:26: error: no method named compare(int, java.lang.String) in Code10 matches. However, there is a method compare(Code10.compare(java.lang.Comparable, java.lang.Comparable)@T, Code10.compare(java.lang.Comparable, java.lang.Comparable)@T)
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend\Code10.java:26: error: no method named compare(int, java.lang.String) in Code10 matches. However, there is a method compare(Code10.compare(java.lang.Comparable, java.lang.Comparable)@T, Code10.compare(java.lang.Comparable, java.lang.Comparable)@T)
  
 ============================================================================= 
 Eclipse ECJ errors for Code10.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code10.java (at line 26)
-	System.out.println(Code10.compare(123, "abc")); // Error
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend\Code10.java (at line 26)
+	System.out.println(Code10.compare(123, "abc"));
 	                          ^^^^^^^
 The method compare(T, T) in the type Code10 is not applicable for the arguments (int, String)
 ----------

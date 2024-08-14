@@ -1,23 +1,24 @@
 javac errors for Code6.java 
-Code6.java:4: error: generic array creation
+Code6.java:3: error: generic array creation
         T[] array = new T[10];
                     ^
 Note: Code6.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 1 error
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code6.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\VariableArityMethods\Code6.java:3: error: cannot create array with non-reifiable element type
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code6.java 
 ----------
-1. WARNING in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\VariableArityMethods\Code6.java (at line 2)
+1. WARNING in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\VariableArityMethods\Code6.java (at line 2)
 	public void unsafeMethod(T... args) {
 	                              ^^^^
 Type safety: Potential heap pollution via varargs parameter args
 ----------
-2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\VariableArityMethods\Code6.java (at line 4)
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\VariableArityMethods\Code6.java (at line 3)
 	T[] array = new T[10];
 	            ^^^^^^^^^
 Cannot create a generic array of T

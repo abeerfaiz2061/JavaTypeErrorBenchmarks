@@ -9,24 +9,25 @@ Note: Code1.java uses unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 1 error
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code1.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Interface_Extend\Code1.java:28: error: type argument 1 is of type T which is not within the bounds of type parameter T (T extends Comparable<T>)
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code1.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Interface_Extend\Code1.java (at line 28)
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Interface_Extend\Code1.java (at line 28)
 	class MinMaxImpl<T> implements MinMax<T> {
 	                                      ^
 Bound mismatch: The type T is not a valid substitute for the bounded parameter <T extends Comparable<T>> of the type MinMax<T>
 ----------
-2. WARNING in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Interface_Extend\Code1.java (at line 39)
-	if (((Comparable<T>)vals[i]).compareTo(v) < 0) { // Unsafe cast leading to compile-time error
+2. WARNING in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Interface_Extend\Code1.java (at line 39)
+	if (((Comparable<T>)vals[i]).compareTo(v) < 0) { 
 	    ^^^^^^^^^^^^^^^^^^^^^^^^
 Type safety: Unchecked cast from T to Comparable<T>
 ----------
-3. WARNING in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Interface_Extend\Code1.java (at line 51)
-	if (((Comparable<T>)vals[i]).compareTo(v) > 0) { // Unsafe cast leading to compile-time error
+3. WARNING in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Interface_Extend\Code1.java (at line 51)
+	if (((Comparable<T>)vals[i]).compareTo(v) > 0) { 
 	    ^^^^^^^^^^^^^^^^^^^^^^^^
 Type safety: Unchecked cast from T to Comparable<T>
 ----------

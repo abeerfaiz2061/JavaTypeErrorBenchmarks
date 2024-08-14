@@ -9,7 +9,7 @@ Code6.java:28: error: incompatible types: inference variable K#1 has incompatibl
     V extends Object declared in method <K#1,V>comparingByKey()
     K#2 extends Object declared in class Code6
 Code6.java:33: error: no suitable method found for comparingByKey(Comparator<T>)
-                .sorted(Map.Entry.<K, T>comparingByKey(Comparator.reverseOrder())) // This will cause a compile-time error
+                .sorted(Map.Entry.<K, T>comparingByKey(Comparator.reverseOrder()))
                                  ^
     method Entry.<K#1,V#1>comparingByKey() is not applicable
       (explicit type argument K#2 does not conform to declared bound(s) Comparable<? super K#2>)
@@ -58,7 +58,7 @@ Eclipse ECJ errors for Code6.java
 The method sorted(Comparator<? super Map.Entry<K,T>>) in the type Stream<Map.Entry<K,T>> is not applicable for the arguments (Comparator<Map.Entry<Comparable<? super Comparable<? super K>>,Object>>)
 ----------
 2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code6.java (at line 33)
-	.sorted(Map.Entry.<K, T>comparingByKey(Comparator.reverseOrder())) // This will cause a compile-time error
+	.sorted(Map.Entry.<K, T>comparingByKey(Comparator.reverseOrder()))
 	                        ^^^^^^^^^^^^^^
 The parameterized method <K, T>comparingByKey(Comparator<? super K>) of type Map.Entry is not applicable for the arguments (Comparator<Comparable<? super Comparable<? super T>>>)
 ----------

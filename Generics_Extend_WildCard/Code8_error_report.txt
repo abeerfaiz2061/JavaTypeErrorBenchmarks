@@ -11,13 +11,15 @@ Code8.java:26: error: no suitable method found for add(Number)
 Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
 1 error
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code8.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code8.java:9: error: cannot assign variable list3 of type java.util.List<java.lang.Number> a value of type java.util.List<java.lang.Number & java.lang.Comparable<? extends & java.lang.Double& java.lang.Long & java.lang.Integer>>
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code8.java:26: error: no method named add(java.lang.Number) in java.util.List<? extends Number> matches. However, there is a method add(wildcards.? extends Number)
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code8.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_WildCard\Code8.java (at line 26)
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code8.java (at line 26)
 	list.add(number);
 	     ^^^
 The method add(capture#4-of ? extends Number) in the type List<capture#4-of ? extends Number> is not applicable for the arguments (Number)

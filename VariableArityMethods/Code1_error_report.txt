@@ -8,13 +8,14 @@ Code1.java:11: error: no suitable method found for process(int,String)
       (varargs mismatch; int cannot be converted to String)
 1 error
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code1.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\VariableArityMethods\Code1.java:11: error: no method named process(int, java.lang.String) in Code1 matches. However, there is a method process(int[])
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code1.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\VariableArityMethods\Code1.java (at line 11)
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\VariableArityMethods\Code1.java (at line 11)
 	process(1, "two");
 	^^^^^^^
 The method process(int...) in the type Code1 is not applicable for the arguments (int, String)

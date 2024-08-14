@@ -5,18 +5,23 @@ Code2.java:4: error: cannot find symbol
   symbol: class T
 1 error
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code2.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Interface\Code2.java:4: error: Integer is not declared abstract but contains abstract members: 
+  compareTo(Unknown) in Comparable<Unknown>
+
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Interface\Code2.java:4: error: type argument 1 is of type Unknown which is not within the bounds of type parameter T (T)
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Interface\Code2.java:4,39: error: no visible type named T
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code2.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Interface\Code2.java (at line 4)
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Interface\Code2.java (at line 4)
 	class Integer implements Comparable<T> {
 	      ^^^^^^^
 The type Integer must implement the inherited abstract method Comparable<T>.compareTo(T)
 ----------
-2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Interface\Code2.java (at line 4)
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Interface\Code2.java (at line 4)
 	class Integer implements Comparable<T> {
 	                                    ^
 T cannot be resolved to a type

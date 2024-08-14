@@ -5,13 +5,14 @@ Code3.java:12: error: incompatible types: List<String> cannot be converted to Li
 Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
 1 error
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code3.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code3.java:12: error: no method named printItemsInList(java.util.List<java.lang.String>) in Code3 matches. However, there is a method printItemsInList(java.util.List<? extends Number>)
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code3.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_WildCard\Code3.java (at line 12)
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code3.java (at line 12)
 	printItemsInList(strings);
 	^^^^^^^^^^^^^^^^
 The method printItemsInList(List<? extends Number>) in the type Code3 is not applicable for the arguments (List<String>)

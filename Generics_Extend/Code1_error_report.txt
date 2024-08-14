@@ -31,42 +31,42 @@ Code1.java:38: error: cannot infer type arguments for Code1<>
  
 ============================================================================= 
 ExtendJ errors for Code1.java 
-C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code1.java:10: error: method does not override a method from a supertype
-C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code1.java:17: error: method does not override a method from a supertype
-C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code1.java:35: error: type argument 1 is of type Generics_Extend.C which is not within the bounds of type parameter T (T extends A)
-C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code1.java:35: error: cannot instantiate Generics_Extend.Code1 no matching constructor found in Generics_Extend.Code1
-C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code1.java:38: error: type argument 1 is of type Generics_Extend.B which is not within the bounds of type parameter T (T extends A)
-C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code1.java:38: error: cannot instantiate Generics_Extend.Code1 no matching constructor found in Generics_Extend.Code1
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend\Code1.java:10: error: method does not override a method from a supertype
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend\Code1.java:17: error: method does not override a method from a supertype
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend\Code1.java:35: error: type argument 1 is of type Generics_Extend.C which is not within the bounds of type parameter T (T extends A)
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend\Code1.java:35: error: cannot instantiate Generics_Extend.Code1 no matching constructor found in Generics_Extend.Code1
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend\Code1.java:38: error: type argument 1 is of type Generics_Extend.B which is not within the bounds of type parameter T (T extends A)
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend\Code1.java:38: error: cannot instantiate Generics_Extend.Code1 no matching constructor found in Generics_Extend.Code1
  
 ============================================================================= 
 Eclipse ECJ errors for Code1.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code1.java (at line 11)
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend\Code1.java (at line 11)
 	public void displayClass() {
 	            ^^^^^^^^^^^^^^
 The method displayClass() of type B must override or implement a supertype method
 ----------
-2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code1.java (at line 18)
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend\Code1.java (at line 18)
 	public void displayClass() {
 	            ^^^^^^^^^^^^^^
 The method displayClass() of type C must override or implement a supertype method
 ----------
-3. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code1.java (at line 35)
+3. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend\Code1.java (at line 35)
 	Code1<C> bec = new Code1<>(new C());
 	      ^
 Bound mismatch: The type C is not a valid substitute for the bounded parameter <T extends A> of the type Code1<T>
 ----------
-4. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code1.java (at line 35)
+4. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend\Code1.java (at line 35)
 	Code1<C> bec = new Code1<>(new C());
 	               ^^^^^^^^^^^^^^^^^^^^
 Cannot infer type arguments for Code1<>
 ----------
-5. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code1.java (at line 38)
+5. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend\Code1.java (at line 38)
 	Code1<B> beb = new Code1<>(new B());
 	      ^
 Bound mismatch: The type B is not a valid substitute for the bounded parameter <T extends A> of the type Code1<T>
 ----------
-6. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code1.java (at line 38)
+6. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend\Code1.java (at line 38)
 	Code1<B> beb = new Code1<>(new B());
 	               ^^^^^^^^^^^^^^^^^^^^
 Cannot infer type arguments for Code1<>

@@ -14,18 +14,20 @@ Code9.java:43: error: incompatible types: List<String> cannot be converted to Li
 Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
 2 errors
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code9.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code9.java:13: error: no method named add(java.lang.Number) in java.util.List<? extends Number> matches. However, there is a method add(wildcards.? extends Number)
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code9.java:43: error: no method named processElements(java.util.List<java.lang.String>) in Code9 matches. However, there is a method processElements(java.util.List<? extends Number>)
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code9.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_WildCard\Code9.java (at line 13)
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code9.java (at line 13)
 	a.add(element);
 	  ^^^
 The method add(capture#2-of ? extends Number) in the type List<capture#2-of ? extends Number> is not applicable for the arguments (Number)
 ----------
-2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_WildCard\Code9.java (at line 43)
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code9.java (at line 43)
 	processElements(a4);
 	^^^^^^^^^^^^^^^
 The method processElements(List<? extends Number>) in the type Code9 is not applicable for the arguments (List<String>)

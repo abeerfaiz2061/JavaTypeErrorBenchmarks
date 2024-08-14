@@ -14,7 +14,7 @@ ExtendJ errors for Code6.java
 ============================================================================= 
 Eclipse ECJ errors for Code6.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code6.java (at line 177)
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend\Code6.java (at line 177)
 	parent.addChild(child);
 	       ^^^^^^^^
 The method addChild(GenericTreeNode<T>) in the type GenericTreeNode<T> is not applicable for the arguments (GenericTreeNode<E>)

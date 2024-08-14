@@ -13,13 +13,14 @@ Code1.java:14: error: method foo in class Code1 cannot be applied to given types
     R extends S declared in method <T,S,R>foo(Map<T,T>,Map<S,S>,Map<R,R>)
 1 error
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code1.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Super\Code1.java:14: error: no method named foo(java.util.Map<java.lang.Integer, java.lang.Double>, java.util.Map<java.lang.Integer, java.lang.Byte>, java.util.Map<java.lang.Integer, java.lang.Byte>) in Generics_Super.Code1 matches. However, there is a method foo(java.util.Map<T, T>, java.util.Map<S, S>, java.util.Map<R, R>)
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code1.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super\Code1.java (at line 14)
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Super\Code1.java (at line 14)
 	foo(m1, m2, m3);
 	^^^
 The method foo(Map<T,T>, Map<S,S>, Map<R,R>) in the type Code1 is not applicable for the arguments (Map<Integer,Double>, Map<Integer,Byte>, Map<Integer,Byte>)

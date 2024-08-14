@@ -86,18 +86,37 @@ Code6.java:44: error: invalid method reference
 Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
 8 errors
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code6.java 
+Fatal exception:
+java.lang.NullPointerException
+	at org.extendj.ast.LambdaExpr.toClass(LambdaExpr.java:351)
+	at org.extendj.ast.LambdaExpr.anonymousDecl(LambdaExpr.java:367)
+	at org.extendj.ast.LambdaExpr.Define_enclosingLambdaType(LambdaExpr.java:1472)
+	at org.extendj.ast.ASTNode.Define_enclosingLambdaType(ASTNode.java:4093)
+	at org.extendj.ast.InferredParameterDeclaration.enclosingLambdaType(InferredParameterDeclaration.java:859)
+	at org.extendj.ast.InferredParameterDeclaration.hostType(InferredParameterDeclaration.java:656)
+	at org.extendj.ast.VarAccess.nameProblems(VarAccess.java:812)
+	at org.extendj.ast.VarAccess.contributeTo_CompilationUnit_problems(VarAccess.java:1293)
+	at org.extendj.ast.CompilationUnit.problems_compute(CompilationUnit.java:1547)
+	at org.extendj.ast.CompilationUnit.problems(CompilationUnit.java:1526)
+	at org.extendj.ast.CompilationUnit.errors(CompilationUnit.java:709)
+	at org.extendj.ast.Frontend.processCompilationUnit(Frontend.java:246)
+	at org.extendj.JavaCompiler.processCompilationUnit(JavaCompiler.java:107)
+	at org.extendj.ast.Frontend.run(Frontend.java:169)
+	at org.extendj.JavaCompiler.run(JavaCompiler.java:101)
+	at org.extendj.JavaCompiler.main(JavaCompiler.java:61)
+	at org.jastadd.extendj.JavaCompiler.main(JavaCompiler.java:39)
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code6.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_Extend_WildCard\Code6.java (at line 36)
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Super_Extend_WildCard\Code6.java (at line 36)
 	.sorted(Map.Entry.<K, V>comparingByValue()) 
 	                        ^^^^^^^^^^^^^^^^
 Bound mismatch: The generic method comparingByValue() of type Map<K,V>.Entry<K,V> is not applicable for the arguments (). The inferred type V is not a valid substitute for the bounded parameter <V extends Comparable<? super V>>
 ----------
-2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Super_Extend_WildCard\Code6.java (at line 43)
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Super_Extend_WildCard\Code6.java (at line 43)
 	.sorted(Map.Entry.<K, V>comparingByValue(reverseOrder())) 
 	                        ^^^^^^^^^^^^^^^^
 The parameterized method <K, V>comparingByValue(Comparator<? super V>) of type Map.Entry is not applicable for the arguments (Comparator<Comparable<? super Comparable<? super T>>>)

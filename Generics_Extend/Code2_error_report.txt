@@ -107,17 +107,17 @@ java.lang.NullPointerException
 ============================================================================= 
 Eclipse ECJ errors for Code2.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code2.java (at line 20)
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend\Code2.java (at line 20)
 	.sorted(Map.Entry.<T, T>comparingByKey())
 	                        ^^^^^^^^^^^^^^
 Bound mismatch: The generic method comparingByKey() of type Map<K,V>.Entry<K,V> is not applicable for the arguments (). The inferred type T is not a valid substitute for the bounded parameter <K extends Comparable<? super K>>
 ----------
-2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code2.java (at line 29)
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend\Code2.java (at line 29)
 	.sorted(Map.Entry.comparingByValue())
 	 ^^^^^^
 The method sorted(Comparator<? super Map.Entry<T,T>>) in the type Stream<Map.Entry<T,T>> is not applicable for the arguments (Comparator<Map.Entry<Object,Comparable<? super Comparable<? super V>>>>)
 ----------
-3. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code2.java (at line 41)
+3. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend\Code2.java (at line 41)
 	sortingMaps.setMap(testMap);
 	            ^^^^^^
 The method setMap(Map<Integer,Integer>) in the type Code2<Integer> is not applicable for the arguments (Map<Integer,String>)

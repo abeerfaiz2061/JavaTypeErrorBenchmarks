@@ -1,17 +1,18 @@
 javac errors for Code1.java 
-Code1.java:37: error: incompatible types: StringLengthTransformer cannot be converted to Transformer<Object,Integer>
-        Transformer<Object, Integer> transformer = new StringLengthTransformer(); // Compile-time error: incompatible types
+Code1.java:33: error: incompatible types: StringLengthTransformer cannot be converted to Transformer<Object,Integer>
+        Transformer<Object, Integer> transformer = new StringLengthTransformer();
                                                    ^
 1 error
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code1.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Interface_Super_Extend_WildCard\Code1.java:33: error: cannot assign variable transformer of type Generics_Interface_Super_Extend_WildCard.Transformer<java.lang.Object, java.lang.Integer> a value of type Generics_Interface_Super_Extend_WildCard.StringLengthTransformer
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code1.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Interface_Super_Extend_WildCard\Code1.java (at line 37)
-	Transformer<Object, Integer> transformer = new StringLengthTransformer(); // Compile-time error: incompatible types
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Interface_Super_Extend_WildCard\Code1.java (at line 33)
+	Transformer<Object, Integer> transformer = new StringLengthTransformer();
 	                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Type mismatch: cannot convert from StringLengthTransformer to Transformer<Object,Integer>
 ----------

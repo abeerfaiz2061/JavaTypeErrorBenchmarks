@@ -11,18 +11,19 @@ Code1.java:13: error: incompatible types: inferred type does not conform to equa
     equality constraints(s): Integer,Number
 2 errors
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code1.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code1.java:13: error: no method named foo(java.util.Map<java.lang.Number, java.lang.Integer>) in Code1 matches. However, there is a method foo(java.util.Map<T, ? extends T>)
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code1.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_WildCard\Code1.java (at line 13)
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code1.java (at line 13)
 	List<Integer> ret = foo(m);
 	                    ^^^
 Cannot make a static reference to the non-static method foo(Map<Number,? extends Number>) from the type Code1
 ----------
-2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_WildCard\Code1.java (at line 13)
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code1.java (at line 13)
 	List<Integer> ret = foo(m);
 	                    ^^^^^^
 Type mismatch: cannot convert from List<Number> to List<Integer>

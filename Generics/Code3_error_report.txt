@@ -1,6 +1,6 @@
 javac errors for Code3.java 
-Code3.java:23: error: method foo in class Code3 cannot be applied to given types;
-        foo(src, big, small); // Error: Incompatible types
+Code3.java:20: error: method foo in class Code3 cannot be applied to given types;
+        foo(src, big, small);
         ^
   required: List<T>,List<T>,List<T>
   found: List<Number>,List<Integer>,List<Double>
@@ -13,13 +13,13 @@ Code3.java:23: error: method foo in class Code3 cannot be applied to given types
  
 ============================================================================= 
 ExtendJ errors for Code3.java 
-C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code3.java:23: error: no method named foo(java.util.List<java.lang.Number>, java.util.List<java.lang.Integer>, java.util.List<java.lang.Double>) in Generics.Code3 matches. However, there is a method foo(java.util.List<T>, java.util.List<T>, java.util.List<T>)
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code3.java:20: error: no method named foo(java.util.List<java.lang.Number>, java.util.List<java.lang.Integer>, java.util.List<java.lang.Double>) in Generics.Code3 matches. However, there is a method foo(java.util.List<T>, java.util.List<T>, java.util.List<T>)
  
 ============================================================================= 
 Eclipse ECJ errors for Code3.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code3.java (at line 23)
-	foo(src, big, small); // Error: Incompatible types
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics\Code3.java (at line 20)
+	foo(src, big, small);
 	^^^
 The method foo(List<T>, List<T>, List<T>) in the type Code3 is not applicable for the arguments (List<Number>, List<Integer>, List<Double>)
 ----------

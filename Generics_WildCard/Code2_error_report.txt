@@ -11,13 +11,14 @@ Code2.java:30: error: method addElement in class Code2 cannot be applied to give
     T extends Object declared in method <T>addElement(Collection<T>,T)
 1 error
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code2.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_WildCard\Code2.java:30: error: no method named addElement(java.util.Collection<java.lang.String>, int) in Code2 matches. However, there is a method addElement(java.util.Collection<T>, Code2.addElement(java.util.Collection, java.lang.Object)@T)
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code2.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_WildCard\Code2.java (at line 30)
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_WildCard\Code2.java (at line 30)
 	addElement(collection, 123); 
 	^^^^^^^^^^
 The method addElement(Collection<T>, T) in the type Code2 is not applicable for the arguments (Collection<String>, int)

@@ -8,17 +8,17 @@ Note: Recompile with -Xlint:unchecked for details.
  
 ============================================================================= 
 ExtendJ errors for Code7.java 
-C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code7.java:13: error: the right-hand side of this instanceof expression does not denote a reifiable type
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend\Code7.java:13: error: the right-hand side of this instanceof expression does not denote a reifiable type
  
 ============================================================================= 
 Eclipse ECJ errors for Code7.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code7.java (at line 13)
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend\Code7.java (at line 13)
 	if (obj instanceof T) {
 	    ^^^^^^^^^^^^^^^^
 Cannot perform instanceof check against type parameter T. Use its erasure A instead since further generic type information will be erased at runtime
 ----------
-2. WARNING in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend\Code7.java (at line 14)
+2. WARNING in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend\Code7.java (at line 14)
 	T casted = (T) obj; 
 	           ^^^^^^^
 Type safety: Unchecked cast from U to T

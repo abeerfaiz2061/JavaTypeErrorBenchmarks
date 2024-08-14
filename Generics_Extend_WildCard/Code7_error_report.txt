@@ -10,23 +10,25 @@ Note: Recompile with -Xlint:unchecked for details.
 Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
 2 errors
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code7.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code7.java:25: error: cannot assign variable numList2 of type java.util.List<? extends Number> a value of type java.util.ArrayList<java.lang.String>
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code7.java:29: error: no method named put(java.awt.Point, java.lang.String) in java.util.Map<java.awt.Point, java.lang.Integer> matches. However, there is a method put(java.awt.Point, java.lang.Integer)
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code7.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_WildCard\Code7.java (at line 25)
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code7.java (at line 25)
 	List<? extends Number> numList2 = new ArrayList<String>();
 	                                  ^^^^^^^^^^^^^^^^^^^^^^^
 Type mismatch: cannot convert from ArrayList<String> to List<? extends Number>
 ----------
-2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_WildCard\Code7.java (at line 29)
+2. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code7.java (at line 29)
 	invalidMap.put(new Point(0, 0), "Not an Integer");
 	           ^^^
 The method put(Point, Integer) in the type Map<Point,Integer> is not applicable for the arguments (Point, String)
 ----------
-3. WARNING in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_WildCard\Code7.java (at line 34)
+3. WARNING in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard\Code7.java (at line 34)
 	List<Integer> integerList = (List<Integer>) wildcardList;
 	                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Type safety: Unchecked cast from List<capture#1-of ?> to List<Integer>

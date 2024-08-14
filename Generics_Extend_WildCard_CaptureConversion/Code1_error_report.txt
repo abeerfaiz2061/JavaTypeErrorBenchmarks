@@ -9,13 +9,14 @@ Code1.java:7: error: incompatible types: CAP#1 cannot be converted to F
     CAP#1 extends E from capture of ? extends E
 1 error
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code1.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard_CaptureConversion\Code1.java:7: error: parameter of type F cannot be assigned an element of type ? extends E
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code1.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Extend_WildCard_CaptureConversion\Code1.java (at line 7)
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Extend_WildCard_CaptureConversion\Code1.java (at line 7)
 	for (F x : from) {
 	           ^^^^
 Type mismatch: cannot convert from element type capture#1-of ? extends E to F

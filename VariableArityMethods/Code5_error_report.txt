@@ -1,5 +1,5 @@
 javac errors for Code5.java 
-Code5.java:13: error: method compareItems in class Code5<T> cannot be applied to given types;
+Code5.java:12: error: method compareItems in class Code5<T> cannot be applied to given types;
         example.compareItems(1, 2, "Three");
                ^
   required: Integer[]
@@ -9,13 +9,14 @@ Code5.java:13: error: method compareItems in class Code5<T> cannot be applied to
     T extends Number,Comparable<T> declared in class Code5
 1 error
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code5.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\VariableArityMethods\Code5.java:12: error: no method named compareItems(int, int, java.lang.String) in Code5<java.lang.Integer> matches. However, there is a method compareItems(Integer[])
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code5.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\VariableArityMethods\Code5.java (at line 13)
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\VariableArityMethods\Code5.java (at line 12)
 	example.compareItems(1, 2, "Three");
 	        ^^^^^^^^^^^^
 The method compareItems(Integer...) in the type Code5<Integer> is not applicable for the arguments (int, int, String)

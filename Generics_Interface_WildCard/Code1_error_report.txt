@@ -6,13 +6,16 @@ Code1.java:4: error: unexpected type
   found:    ?
 1 error
  
-========================= 
+============================================================================= 
 ExtendJ errors for Code1.java 
+C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Interface_WildCard\Code1.java:4: error: Integer is not declared abstract but contains abstract members: 
+  compareTo(java.lang.Object) in Comparable<?>
+
  
-========================= 
+============================================================================= 
 Eclipse ECJ errors for Code1.java 
 ----------
-1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\CodeRepo\Generics_Interface_WildCard\Code1.java (at line 4)
+1. ERROR in C:\Users\Abeer Faiz Farid\Desktop\MSc Software Engineering\Semester 3\JavaTypeErrorBenchmarks\Generics_Interface_WildCard\Code1.java (at line 4)
 	class Integer implements Comparable<?> {
 	                         ^^^^^^^^^^
 The type Integer cannot extend or implement Comparable<?>. A supertype may not specify any wildcard
